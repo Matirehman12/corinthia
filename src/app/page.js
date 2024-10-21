@@ -1,6 +1,5 @@
+
 "use client"; // Add this line to mark the component as a client component
-
-
 import Image from "next/image";
 
 import surgicalAsthetic1 from '../images/surgicalAsthetic1.svg'
@@ -38,7 +37,7 @@ export default function Home() {
     <>
       <div>
         <video src="https://www.corinthia.com/globalassets/corinthia-global/videos/homepage-videos/brand-homepage---2024-v2.mp4"
-          autoplay
+          autoPlay
           muted
           preload="auto"
           loop="loop"
@@ -159,6 +158,7 @@ export default function Home() {
 
 
       </div>
+      
     </>
   );
 }

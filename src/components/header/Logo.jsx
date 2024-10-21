@@ -1,6 +1,6 @@
 import Link from "next/link";
 import clsx from "clsx";
-import logo from '../images/logo.svg'
+import logo from '../../images/logo.svg'
 import Image from "next/image";
 
 
