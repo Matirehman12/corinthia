@@ -11,6 +11,9 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        caslon: ['"Adobe Caslon Pro"', 'serif'],
+      },
     },
   },
   plugins: [],
