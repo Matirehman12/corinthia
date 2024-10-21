@@ -6,6 +6,7 @@ import surgicalAsthetic3 from '../images/surgicalAsthetic3.svg'
 import enhancementImg from '../images/enhancementImg.svg'
 import bgImage from '../images/bgImage.svg'
 import CustomCarousel from "@/components/carousel/CustomCarousel";
+import Footer from "@/components/footer/Footer";
 
 
 
@@ -89,7 +90,7 @@ export default function Home() {
       </div>
 
       <div className="grid grid-cols-1 gap-4">
-      <CustomCarousel />
+        <CustomCarousel />
       </div>
       <div className="grid grid-cols-3 gap-4 mt-40 mx-20">
         <div className="image-container">
@@ -125,7 +126,8 @@ export default function Home() {
 
 
       </div>
-      
+      <Footer />
+
     </>
   );
 }
