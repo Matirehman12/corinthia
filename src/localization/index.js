@@ -8,6 +8,16 @@ export const localization = {
     ourPhoneNumber: 'Our phone number',
     dummyNumber: '44 (0) 1689 224 8899',
     ourClinicAddress: 'Our CLINIC Address',
-    dummyAddress: '4 Locks Court, 429 Crofton Road, BR6 8NL'
+    dummyAddress: '4 Locks Court, 429 Crofton Road, BR6 8NL',
+    firstName: 'First Name',
+    lastName: 'Last Name',
+    phoneNumber: 'Phone Number',
+    emailAddress: 'Email Address',
+
+    country: 'Country',
+    address: 'Address',
+    message: 'Message'
+
+
 
 }
