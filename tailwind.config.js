@@ -10,9 +10,12 @@ module.exports = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        black: "#080808",
+        gray: "#484848"
       },
       fontFamily: {
         caslon: ['"Adobe Caslon Pro"', 'serif'],
+        optima: ['Optima', 'sans-serif'],
       },
     },
   },

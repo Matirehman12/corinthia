@@ -1,3 +1,4 @@
+import Footer from "@/components/footer/Footer";
 import Image from "next/image";
 
 export default function Home() {
@@ -5,7 +6,7 @@ export default function Home() {
     <>
       <div>
         <video src="https://www.corinthia.com/globalassets/corinthia-global/videos/homepage-videos/brand-homepage---2024-v2.mp4"
-          autoplay
+          autoPlay
           muted
           preload="auto"
           loop="loop"
@@ -32,6 +33,7 @@ export default function Home() {
           sasa
         </div>
       </div>
+      
     </>
   );
 }
