@@ -41,7 +41,7 @@ export default function Treatment1() {
             </div>
 
             <div className="grid grid-cols-2 gap-4">
-                <div className="leftDiv mx-80 text-1xl mt-8">
+                <div className="leftDiv mx-20 text-1xl mt-8">
                     <p className="mb-4">Refresh your look with anti-wrinkle injections to smooth existing wrinkles and to help prevent the formation of new ones. Relaxing the muscles with carefully placed anti-wrinkle injections can quickly and effectively create a more youthful look and relax those expression lines that can cause you to look tired and sometimes even angry and detract from your natural glow.</p>
                     <p className="mb-4">Treatment areas include:</p>
                     <ul className="list-disc ml-4 ">
