@@ -14,6 +14,8 @@ module.exports = {
         gray: "#484848",
         customGold: '#BB975B',
         lightGray: '#F7F6F4',
+        bgGray: '#EBEBEB',
+        bgDarkGray: '#F7F7F7',
 
       },
       fontFamily: {
