@@ -44,15 +44,16 @@ const responsive = {
 
 export default function CustomCarousel() {
   return (
-    <Carousel responsive={responsive} draggable={true}>
+    <Carousel responsive={responsive} draggable={true} className="gap-3">
       {images.map((image, index) => (
         // <div className="image-container w-full flex-shrink-0" key={index}>
           <Image
             src={image}
             alt={`Image ${index + 1}`}
-            height={300}
+            height={500}
             width={300}
-            className="h-[300px] w-full object-cover"
+            className="h-[500px] w-full object-cover rounded"
+             loading="lazy"
             // style={{ height: '300px' }}
           />
         // </div>
