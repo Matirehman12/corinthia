@@ -11,7 +11,10 @@ module.exports = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         black: "#080808",
-        gray: "#484848"
+        gray: "#484848",
+        customGold: '#BB975B',
+        lightGray: '#F7F6F4',
+
       },
       fontFamily: {
         caslon: ['"Adobe Caslon Pro"', 'serif'],
