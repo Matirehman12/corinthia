@@ -34,7 +34,7 @@ const responsive = {
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 2
+    items: 5
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
@@ -46,16 +46,16 @@ export default function CustomCarousel() {
   return (
     <Carousel responsive={responsive} draggable={true}>
       {images.map((image, index) => (
-        <div className="image-container w-full flex-shrink-0" key={index}>
+        // <div className="image-container w-full flex-shrink-0" key={index}>
           <Image
             src={image}
             alt={`Image ${index + 1}`}
             height={300}
             width={300}
-            className="h-[300px]"
+            className="h-[300px] w-full object-cover"
             // style={{ height: '300px' }}
           />
-        </div>
+        // </div>
       ))}
     </Carousel>
   );

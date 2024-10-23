@@ -17,6 +17,9 @@ module.exports = {
         caslon: ['"Adobe Caslon Pro"', 'serif'],
         optima: ['Optima', 'sans-serif'],
       },
+      backgroundImage: {
+        'bottom-lines': "url('/src/images/bottom-lines.svg')",
+      }
     },
   },
   plugins: [],
