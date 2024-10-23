@@ -53,8 +53,8 @@ export default function ReactMultiCarousel() {
               alt={`Image ${index + 1}`}
               layout="responsive"
               height={300}
-              width={300}
-              className="h-300 object-cover "
+            width={300}
+            className="h-[300px] w-full object-cover"
             />
           </div>
         ))}
