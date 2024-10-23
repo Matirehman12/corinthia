@@ -32,44 +32,43 @@ export default function Home() {
           />
         </div>
         <div className="grid grid-cols-12 gap-10 xl:px-20 bottom-lines relative z-10">
-          <div className="col-span-8">
+          <div className="col-span-10 md:col-span-8">
             <div className="grid grid-cols-12 gap-10">
-              <div className="col-span-12 lg:ps-40 md:ps-20">
-                <div className="surgical-asthetic ">
-
-                  <h4 className="text-6xl font-caslon font-normal mt-[80px]">
-                    Award Winning <br />
-                    Non surgical <br />
-                    Aesthetic <br />
+              <div className="col-span-10 lg:ps-40 md:ps-20">
+                <div className="surgical-asthetic mx-3">
+                  <h4 className="text-4xl md:text-6xl font-caslon font-normal mt-[80px] md:w-[75%] uppercase">
+                    Award Winning 
+                    Non surgical 
+                    Aesthetic 
                     excellence
                   </h4>
-                  <p className="font-base font-caslon font-gray w-[45%]">
+                  <p className="font-base font-caslon font-gray md:w-[55%]">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
                   </p>
                 </div>
 
               </div>
               {/* <div className="col-span-8"></div> */}
-              <div className="md:col-span-6">
+              <div className="col-span-10 md:col-span-6">
                 <Image
                   src={surgicalAsthetic3}
-                  className="md:mt-[400px] w-full"
+                  className="md:mt-[400px] w-full mx-3"
                 />
               </div>
-              <div className="md:col-span-6">
+              <div className="col-span-10 md:col-span-6">
                 <Image
                   src={surgicalAsthetic2}
-                  className="w-full"
+                  className="w-full mx-3"
                 />
 
               </div>
 
             </div>
           </div>
-          <div className="col-span-4">
+          <div className="col-span-10 md:col-span-4">
             <Image
               src={surgicalAsthetic1}
-              className="mt-[80px] w-full"
+              className="md:mt-[80px] w-full mx-3"
             />
           </div>
         </div>
@@ -86,7 +85,7 @@ export default function Home() {
           background: 'linear-gradient(316.72deg, #FFFFFF 39.95%, #A9A9A9 77.81%)'
         }}>
         <div className="enhencementDiv col-span-12 p-6 py-32 mt-20 flex flex-col items-center justify-center text-center h-[auto]">
-          <h4 className="text-6xl font-normal font-caslon mb-6">
+          <h4 className="text-3xl md:text-6xl font-normal font-caslon mb-6">
             TRANSFORMATIVE <br />
             ENHANCEMENTS
 
@@ -106,7 +105,7 @@ export default function Home() {
       <div className="grid grid-cols-1 gap-4">
         <CustomCarousel />
       </div>
-      <div className="grid grid-cols-3 gap-4 mt-40 mx-20">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-40 mx-20">
         <div className="image-container">
           <Image
             src={surgicalAsthetic3}
@@ -116,20 +115,20 @@ export default function Home() {
 
           <Image
             src={surgicalAsthetic2}
-            className="mt-[400px]"
+            className="md:mt-[400px] w-full"
           />
         </div>
         <div className="image-container">
           <Image
             src={surgicalAsthetic1}
-            className="mt-[800px]"
+            className="md:mt-[800px]"
           />
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-4">
-        <div className="leftDiv mx-20 mt-20">
-          <h4 className="mb-5 text-6xl font-caslon">TRUSTED SKIN EXPERTISE</h4>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="leftDiv mx-10 md:mx-20 mt-20">
+          <h4 className="mb-5 text-3xl md:text-6xl font-caslon">TRUSTED SKIN EXPERTISE</h4>
           <p className="text-1xl font-caslon text-gray">  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
         </div>
         <div className="relative right-[50px]">
