@@ -27,6 +27,8 @@ const images = [
   surgicalAsthetic2,
   surgicalAsthetic1,
   containerImg2,
+  containerImg2,
+
 ];
 
 // Responsive settings for the carousel
@@ -37,7 +39,7 @@ const responsive = {
   },
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 7
+    items: 9
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
@@ -52,15 +54,15 @@ const responsive = {
 export default function ReactMultiCarousel() {
   return (
     <div className="relative overflow-hidden grid grid-cols-1">
-      <Carousel responsive={responsive} draggable={true}>
+      <Carousel responsive={responsive} draggable={true}  sliderClass="gap-3">
       {images.map((image, index) => (
         // <div className="image-container w-full flex-shrink-0" key={index}>
           <Image
             src={image}
             alt={`Image ${index + 1}`}
-            height={300}
+            height={250}
             width={233}
-            className="h-[210px] w-full object-cover rounded px-3"
+            className="h-[250px]  object-cover rounded-[10px] "
             // style={{ height: '300px' }}
           />
         // </div>

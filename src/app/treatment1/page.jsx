@@ -5,6 +5,7 @@ import Image from "next/image";
 import bgImage from '../../images/bgImage.svg'
 import ReactMultiCarousel from "@/components/carousel/ReactMultiCarousel";
 import treatment1Img from '../../images/treatment1Img.svg'
+import Footer from '@/components/footer/Footer';
 
 export default function Treatment1() {
     return (
@@ -44,10 +45,10 @@ export default function Treatment1() {
             </div>
 
             <div className="grid grid-cols-2 gap-4 mt-40">
-                <div className="leftDiv mx-20 text-1xl mt-8">
-                    <p className="mb-4 font-caslon">Refresh your look with anti-wrinkle injections to smooth existing wrinkles and to help prevent the formation of new ones. Relaxing the muscles with carefully placed anti-wrinkle injections can quickly and effectively create a more youthful look and relax those expression lines that can cause you to look tired and sometimes even angry and detract from your natural glow.</p>
-                    <p className="mb-4 font-caslon">Treatment areas include:</p>
-                    <ul className="list-disc ml-4 font-caslon">
+                <div className="leftDiv mx-20 text-1xl mt-8 px-28">
+                    <p className="mb-4 font-caslon text-2xl font-normal text-gray">Refresh your look with anti-wrinkle injections to smooth existing wrinkles and to help prevent the formation of new ones. Relaxing the muscles with carefully placed anti-wrinkle injections can quickly and effectively create a more youthful look and relax those expression lines that can cause you to look tired and sometimes even angry and detract from your natural glow.</p>
+                    <p className="mb-4 font-caslon text-2xl font-normal text-gray">Treatment areas include:</p>
+                    <ul className="list-disc ml-4 font-caslon text-xl font-normal text-gray">
                         <li>Forehead lines</li>
                         <li>Smile & Frown lines</li>
                         <li>Neck lines - Platysma bands</li>
@@ -58,7 +59,7 @@ export default function Treatment1() {
                         <li>Bunny lines</li>
                         <li>Crow’s feet around the eyes</li>
                     </ul>
-                    <p className="mt-4 font-caslon">A reliable treatment that can work from around 3-4 days to smooth the skin results are individual but can last from three to six months When expertly administered, toxin injections can do more than simply reduce the look of facial lines and wrinkles. Brows can be lifted, the lip flipped for a more voluminous look and noses prevented from drooping. Anti-wrinkle or toxin injections also have multiple non-aesthetic benefits as well, such as the treatment of excessive sweating, bruxism teeth-clenching and migraines.  Book in a consultation to discuss your treatment needs.</p>
+                    <p className="mt-4 font-caslon text-2xl font-normal text-gray">A reliable treatment that can work from around 3-4 days to smooth the skin results are individual but can last from three to six months When expertly administered, toxin injections can do more than simply reduce the look of facial lines and wrinkles. Brows can be lifted, the lip flipped for a more voluminous look and noses prevented from drooping. Anti-wrinkle or toxin injections also have multiple non-aesthetic benefits as well, such as the treatment of excessive sweating, bruxism teeth-clenching and migraines.  Book in a consultation to discuss your treatment needs.</p>
                 </div>
                 <div className="rightDiv">
                     <Image
@@ -115,6 +116,9 @@ export default function Treatment1() {
                 </div>
 
 
+            </div>
+            <div className='mt-20'>
+                <Footer />
             </div>
 
         </>

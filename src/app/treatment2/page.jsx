@@ -15,6 +15,7 @@ import arrowIcon from '../../images/arrowIcon.svg';
 
 import Image from "next/image";
 import NewsLetter from '@/components/newsletter/NewsLetter';
+import Footer from '@/components/footer/Footer';
 
 
 export default function Treatment2() {
@@ -307,7 +308,7 @@ export default function Treatment2() {
                         <div className="flex items-center gap-10">
                             <p>Excessive sweating</p>
                             <Image src={arrowIcon}
-                            className='h-[50px]'
+                                className='h-[50px]'
                             />
                         </div>
                         <div className="flex items-center gap-10">
@@ -343,6 +344,7 @@ export default function Treatment2() {
                 <LogoSection />
             </div>
 
+            <Footer />
 
 
         </>

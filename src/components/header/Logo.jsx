@@ -20,9 +20,10 @@ const Logo = ({ className, props }) => {
             <Image
                 src={logo}
                 alt="brand logo"
-                width={180}
-                height={38}
+                // width={180}
+                // height={38}
                 priority
+                className="w-[180px] md:w-auto -me-10"
             />
         </Link>
     );

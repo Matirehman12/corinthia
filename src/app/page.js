@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <>
-      <div>
+      <div className="mt-20">
         <video src="https://www.corinthia.com/globalassets/corinthia-global/videos/homepage-videos/brand-homepage---2024-v2.mp4"
           autoPlay
           muted
@@ -52,13 +52,13 @@ export default function Home() {
               <div className="col-span-10 md:col-span-6">
                 <Image
                   src={surgicalAsthetic3}
-                  className="md:mt-[400px] w-full mx-3"
+                  className="md:mt-[400px] w-full mx-3 sticky top-0 z-20"
                 />
               </div>
               <div className="col-span-10 md:col-span-6">
                 <Image
                   src={surgicalAsthetic2}
-                  className="w-full mx-3"
+                  className="w-full mx-3 sticky top-0 z-20"
                 />
 
               </div>
@@ -68,7 +68,7 @@ export default function Home() {
           <div className="col-span-10 md:col-span-4">
             <Image
               src={surgicalAsthetic1}
-              className="md:mt-[80px] w-full mx-3"
+              className="md:mt-[80px] w-full mx-3 sticky top-0 z-20"
             />
           </div>
         </div>
@@ -82,10 +82,10 @@ export default function Home() {
 
       <div className="grid grid-cols-12 justify-center mt-20"
         style={{
-          background: 'linear-gradient(316.72deg, #FFFFFF 39.95%, #A9A9A9 77.81%)'
+          background: 'linear-gradient(327.72deg, #FFFFFF 43.95%, #A9A9A9 141.81%)'
         }}>
         <div className="enhencementDiv col-span-12 p-6 py-32 mt-20 flex flex-col items-center justify-center text-center h-[auto]">
-          <h4 className="text-3xl md:text-6xl font-normal font-caslon mb-6">
+          <h4 className="text-3xl md:text-6xl font-normal font-caslon text-[#2C2C2C] mb-6">
             TRANSFORMATIVE <br />
             ENHANCEMENTS
 
@@ -102,34 +102,36 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 gap-4">
+      <div className="grid grid-cols-1 ps-3">
         <CustomCarousel />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-40 mx-20">
         <div className="image-container">
           <Image
             src={surgicalAsthetic3}
+            className="sticky top-0 z-20"
           />
         </div>
         <div className="image-container">
 
           <Image
             src={surgicalAsthetic2}
-            className="md:mt-[400px] w-full"
+            className="md:mt-[400px] w-full sticky top-0 z-20"
           />
         </div>
         <div className="image-container">
           <Image
             src={surgicalAsthetic1}
-            className="md:mt-[800px]"
+            className="md:mt-[800px] sticky top-0 z-20"
           />
         </div>
       </div>
+      
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-        <div className="leftDiv mx-10 md:mx-20 mt-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:relative lg:top-[-340px]">
+        <div className="leftDiv mx-10 lg:mx-20 mt-20 z-40">
           <h4 className="mb-5 text-3xl md:text-6xl font-caslon">TRUSTED SKIN EXPERTISE</h4>
-          <p className="text-1xl font-caslon text-gray">  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+          <p className="text-2xl font-caslon text-gray lg:w-[80%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
         </div>
         <div className="relative right-[50px]">
           <Image
@@ -137,8 +139,8 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="relative">
-        <div className="absolute top-[-100px]">
+      <div className="relative lg:top-[-340px]">
+        <div className="absolute lg:top-[-100px]">
           <Footer />
         </div>
       </div>

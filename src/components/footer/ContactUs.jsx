@@ -19,25 +19,25 @@ const ContactUs = () => {
                             </div>
 
                             <div>
-                                <div className='flex items-center gap-3 mb-10'>
+                                <div className='flex items-center gap-5 mb-10'>
                                     {svgIcons.emailIcon}
                                     <div>
                                         <p className='font-normal font-caslon md:text-lg text-base text-gray mb-0 leading-5 uppercase'>{localization.ourEmailAddress}</p>
-                                        <p className='font-normal font-caslon md:text-2xl text-base text-black'>{localization.exampleEmail}</p>
+                                        <p className='font-normal font-caslon md:text-2xl text-base text-black mb-0'>{localization.exampleEmail}</p>
                                     </div>
                                 </div>
-                                <div className='flex items-center gap-3 mb-10'>
+                                <div className='flex items-center gap-5 mb-10'>
                                     {svgIcons.phoneIcon}
                                     <div>
                                         <p className='font-normal font-caslon md:text-lg text-base text-gray mb-0 leading-5 uppercase'>{localization.ourPhoneNumber}</p>
-                                        <p className='font-normal font-caslon md:text-2xl text-base text-black'>{localization.dummyNumber}</p>
+                                        <p className='font-normal font-caslon md:text-2xl text-base text-black mb-0'>{localization.dummyNumber}</p>
                                     </div>
                                 </div>
-                                <div className='flex items-center gap-3 mb-10'>
+                                <div className='flex items-center gap-5 mb-10'>
                                     {svgIcons.addressIcon}
                                     <div>
                                         <p className='font-normal font-caslon md:text-lg text-base text-gray mb-0 leading-5 uppercase'>{localization.ourClinicAddress}</p>
-                                        <p className='font-normal font-caslon md:text-2xl text-base text-black'>{localization.dummyAddress}</p>
+                                        <p className='font-normal font-caslon md:text-2xl text-base text-black mb-0'>{localization.dummyAddress}</p>
                                     </div>
                                 </div>
                             </div>
@@ -80,7 +80,7 @@ const ContactUs = () => {
                                 required
                             />
 
-                            <button className='bg-yellowGradient h-[60px] font-caslon font-normal text-lg leading-5'>
+                            <button className='bg-yellowGradient h-[60px] font-caslon font-normal text-lg leading-5 mt-5'>
                                 Send Message
                             </button>
                         </div>
