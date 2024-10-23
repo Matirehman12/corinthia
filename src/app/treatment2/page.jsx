@@ -305,19 +305,19 @@ export default function Treatment2() {
                 <div className="rightRelated flex justify-center mt-20 flex-col ml-20">
                     <h1 className="text-4xl font-caslon mb-20">RELATED <br /> CONDITIONS</h1>
                     <div className="list-one font-caslon flex  gap-10">
-                        <div className="flex items-center gap-10">
+                        <div className="flex items-center gap-10 mb-5">
                             <p>Excessive sweating</p>
                             <Image src={arrowIcon}
                                 className='h-[50px]'
                             />
                         </div>
-                        <div className="flex items-center gap-10">
+                        <div className="flex items-center gap-10 mb-5">
                             <p>Teeth grindling & <br /> Jaw Line Slimming</p>
                             <Image src={arrowIcon} />
                         </div>
                     </div>
-                    <div className="list-two font-caslon flex  gap-10 mt-5">
-                        <div className="flex items-center gap-10">
+                    <div className="list-two font-caslon flex  gap-10 mb-5">
+                        <div className="flex items-center gap-8">
                             <p>Tired Eyes, Eyebags  <br /> & Dark Circles</p>
                             <Image src={arrowIcon} />
                         </div>
