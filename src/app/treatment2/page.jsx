@@ -67,7 +67,7 @@ export default function Treatment2() {
             </div>
 
 
-            <div className="container ">
+            <div className="container mx-auto">
                 <div className="grid grid-cols-1 mt-20">
                     <h1 className='d-flex items-center text-center text-4xl font-caslon justify-center'>FAQs</h1>
                     <div className="flex flex-col items-center justify-center mx-40 my-10">
@@ -163,123 +163,104 @@ export default function Treatment2() {
             </div>
 
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-60 h-[420px] bg-lightGray p-8 mr-60">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-60  bg-lightGray p-8 py-16 mr-60 relative">
 
-                <div className="flex flex-col items-start ml-[115px]">
+                <div className="flex flex-col items-start ml-[115px] ">
                     <h1 className="text-4xl font-caslon font-bold mb-4">TESTIMONIALS</h1>
                     <p className="text-lg text-gray-700 font-caslon mb-6">
                         We value feedback from <br /> our clients, here are some <br /> of our recent testimonials.
                     </p>
-                    <Image
-                        src={containerImg5}
-                        alt="Client Image"
-                        width={338}
-                        height={339}
-                        className="mb-4  h-[420px]"
-                    />
+                    <div>
+                        <Image
+                            src={containerImg5}
+                            alt="Client Image"
+                            width={338}
+                            height={339}
+                            className="mb-4  h-[420px] absolute"
+                        />
+                    </div>
                 </div>
 
 
-                <div className="bg-white p-8 flex flex-col max-w-lg h-[250px] mt-5   justify-start">
-                    <div className="flex">
-                        <div className="text-6xl font-bold text-black mr-4 leading-none">
+                <div className="relative">
+                    <div>
+                        <Image
+                            src={testemonialsImg}
+                            width={177}
+                            height={163}
+                            className='absolute -left-28 -top-3'
+                        />
+                    </div>
+
+                    <div className='w-[70%] bg-white p-8 py-20 mt-5 '>
+                        <p className="text-lg italic font-caslon mx-8 mb-4">
+                            This team are the most professional. I wouldn't trust anyone else with my injectables. Cham has been a great support through the years. I always leave feeling uplifted and empowered!
+                        </p>
+                        <p className="text-lg font-semibold font-caslon text-right">Sarah</p>
+                    </div>
+                </div>
+            </div>
+
+            <div className="container mx-auto mt-[300px]">
+                <div className="grid grid-cols-1 mt-20">
+                    <div className="text-center mb-10">
+                        <h1 className="text-4xl font-semibold">SEE THE RESULTS</h1>
+                        <hr className="w-24 mx-auto mt-4 border-black border-t-2" />
+                    </div>
+
+                    <div className="grid grid-cols-5 mx-40">
+                        <div>
                             <Image
-                                src={testemonialsImg}
-                                width={177}
-                                height={163}
-                                className='absolute left-[40%]'
+                                src={after}
+                                alt="Before Image 1"
+                                height={282}
+                                className="shadow-md w-full"
                             />
+                            <p className="text-center font-caslon font-normal text-base mt-3">Before</p>
+                        </div>
+                        <div className='mt-14'>
+                            <Image
+                                src={after}
+                                alt="After Image 1"
+                                height={282}
+                                className="shadow-md w-full"
+                            />
+                            <p className="text-center font-caslon font-normal text-base mt-3">After</p>
                         </div>
 
-
-                        <div className="flex flex-col">
-                            <p className="text-lg italic font-caslon mx-8 mb-4">
-                                This team are the most professional. I wouldn't trust anyone else with my injectables. Cham has been a great support through the years. I always leave feeling uplifted and empowered!
+                        <div className=" text-center font-caslon font-normal text-base mt-16">
+                            <p className="text-1xl text-gray-600">
+                                We're proud of the results we < br /> achieve for our clients. Scroll <br /> to see more of our incredible <br /> patient before & afters.
                             </p>
-                            <p className="text-lg font-semibold font-caslon text-right">Sarah</p>
+                        </div>
+                        <div className='mt-28'>
+                            <Image
+                                src={after1}
+                                alt="Before Image 2"
+                                height={282}
+                                className="shadow-md w-full"
+                            />
+                            <p className="text-center font-caslon font-normal text-base mt-3">Before</p>
+
+                        </div>
+                        <div className='mt-44'>
+                            <Image
+                                src={after1}
+                                alt="After Image 2"
+                                height={282}
+                                className="shadow-md w-full"
+                            />
+                            <p className="text-center font-caslon font-normal text-base mt-3">After</p>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
-            <div className="grid grid-cols-1 mt-20">
-                <div className="text-center mb-10">
-                    <h1 className="text-4xl font-semibold">SEE THE RESULTS</h1>
-                    <hr className="w-24 mx-auto mt-4 border-black border-t-2" />
-                </div>
-            </div>
-
-
-
-            <div className="grid grid-cols-5 ml-40">
-
-
-                <div className="flex flex-col items-center">
-                    <div className="flex items-center">
-                        <Image
-                            src={after}
-                            alt="Before Image 1"
-                            width={230}
-                            height={282}
-                            className="shadow-md"
-                        />
-                        <Image
-                            src={after}
-                            alt="After Image 1"
-                            width={230}
-                            height={282}
-                            className="shadow-md ml-4"
-                        />
-                    </div>
-
-                    <div className="flex justify-between w-full mt-4">
-                        <p className="text-center">Before</p>
-                        <p className="text-center">After</p>
-                    </div>
-                    <hr className="w-23 mx-auto mt-4 border-black border-t-2" />
-
-                </div>
-
-                {/* <!-- Section Description --> */}
-                <div className=" text-center">
-                    <p className="text-1xl text-gray-600">
-                        We're proud of the results we < br /> achieve for our clients. Scroll <br /> to see more of our incredible <br /> patient before & afters.
-                    </p>
-                </div>
-
-                {/* <!-- Second Before & After Images --> */}
-                <div className="flex flex-col">
-                    <div className="flex ">
-                        <Image
-                            src={after1}
-                            alt="Before Image 2"
-                            width={230}
-                            height={282}
-                            className="shadow-md"
-                        />
-                        <Image
-                            src={after1}
-                            alt="After Image 2"
-                            width={230}
-                            height={282}
-                            className="shadow-md ml-4"
-                        />
-                    </div>
-                    <div className="flex justify-between w-full mt-4">
-                        <p className="text-center">Before</p>
-                        <p className="text-center">After</p>
-                    </div>
-                </div>
-
-            </div>
-
-
 
             <div className="grid grid-cols-1 mt-20">
                 <Image
                     src={containerImg}
+                    className='w-full'
+                    height={800}
                 />
             </div>
 
@@ -304,31 +285,31 @@ export default function Treatment2() {
                 </div>
                 <div className="rightRelated flex justify-center mt-20 flex-col ml-20">
                     <h1 className="text-4xl font-caslon mb-20">RELATED <br /> CONDITIONS</h1>
-                    <div className="list-one font-caslon flex  gap-10">
+                    <div className="list-one font-caslon flex gap-10">
                         <div className="flex items-center gap-10 mb-5">
-                            <p>Excessive sweating</p>
+                            <p className='font-caslon font-normal text-2xl text-black'>Excessive sweating</p>
                             <Image src={arrowIcon}
                                 className='h-[50px]'
                             />
                         </div>
-                        <div className="flex items-center gap-10 mb-5">
-                            <p>Teeth grindling & <br /> Jaw Line Slimming</p>
+                        <div className="flex items-start gap-10 mb-5">
+                            <p className='font-caslon font-normal text-2xl text-black'>Teeth grindling & <br /> Jaw Line Slimming</p>
                             <Image src={arrowIcon} />
                         </div>
                     </div>
                     <div className="list-two font-caslon flex  gap-10 mb-5">
-                        <div className="flex items-center gap-8">
-                            <p>Tired Eyes, Eyebags  <br /> & Dark Circles</p>
+                        <div className="flex items-start gap-8">
+                            <p className='font-caslon font-normal text-2xl text-black'>Tired Eyes, Eyebags  <br /> & Dark Circles</p>
                             <Image src={arrowIcon} />
                         </div>
-                        <div className="flex items-center gap-10">
-                            <p>Thin Lips, Uneven <br /> Lips & Lip Lines</p>
+                        <div className="flex items-start gap-10 mb-5">
+                            <p className='font-caslon font-normal text-2xl text-black'>Thin Lips, Uneven <br /> Lips & Lip Lines</p>
                             <Image src={arrowIcon} />
                         </div>
                     </div>
-                    <div className="list-three font-caslon mt-5 max-w-lg pb-20 border-b">
+                    <div className="list-three font-caslon mb-5 max-w-lg pb-20 border-b">
                         <div className="flex items-center gap-20">
-                            <p>Anti-Ageing</p>
+                            <p className='font-caslon font-normal text-2xl text-black'>Anti-Ageing</p>
                             <Image src={arrowIcon} />
                         </div>
                     </div>
@@ -344,8 +325,9 @@ export default function Treatment2() {
                 <LogoSection />
             </div>
 
-            <Footer />
-
+            <div className='mt-52'>
+                <Footer />
+            </div>
 
         </>
     )

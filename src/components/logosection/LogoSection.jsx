@@ -9,7 +9,7 @@ export default function LogoSection(){
     return(
         <>
         
-        <div className="container">
+        <div className="container mx-auto">
         <div className="grid grid-cols-1">
                 <h1 className='text-5xl text-center'>FEATURED IN</h1>
                 <div className="logoDiv flex  mt-10">
