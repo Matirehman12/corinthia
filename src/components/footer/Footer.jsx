@@ -82,9 +82,9 @@ const Footer = () => {
                     </div>
                 </footer>
             </div>
-            <div className='absolute bottom-0 -z-10'>
+            {/* <div className='absolute bottom-0 -z-10'>
                 <Image src={footerBg} />
-            </div>
+            </div> */}
         </div>
     )
 }
