@@ -10,7 +10,6 @@ import relatedImg1 from '../../images/relatedImg1.svg';
 import relatedImg2 from '../../images/relatedImg2.svg';
 import LogoSection from '@/components/logosection/LogoSection';
 import Accordian from '@/components/accordian/Accordian';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 import arrowIcon from '../../images/arrowIcon.svg';
 
@@ -73,42 +72,42 @@ export default function Treatment2() {
 
 
 
-            <div className="container mx-auto mt-20 mb-20">
+            {/* <div className="container mx-auto mt-20 mb-20">
                 <div className="grid grid-cols-1">
                     <h1 className='text-5xl font-caslon text-center mb-4'>FAQ</h1>
                     <div className="accordian1 ">
-                    <Accordian
-                    h1={"IS THIS TREATMENT SUITABLE FOR ME?"}
-                     />
+                        <Accordian
+                            h1={"IS THIS TREATMENT SUITABLE FOR ME?"}
+                        />
                     </div>
                     <div className="accordian2 mt-20">
-                    <Accordian
-                    h1={"WHAT RESULT CAN I EXPECT?"}
-                    p={"We believe health and wellbeing should be balanced in order to achieve optimal beauty. Treatments are seen as ‘a journey to a new you’ and we support all clients with bespoke treatment plans to ensure you see the best results. Emphasis is placed on subtle balancing, restoring, and enhancing your natural beauty, to ensure you feel empowered to become the best version of you."}
-                     />
+                        <Accordian
+                            h1={"WHAT RESULT CAN I EXPECT?"}
+                            p={"We believe health and wellbeing should be balanced in order to achieve optimal beauty. Treatments are seen as ‘a journey to a new you’ and we support all clients with bespoke treatment plans to ensure you see the best results. Emphasis is placed on subtle balancing, restoring, and enhancing your natural beauty, to ensure you feel empowered to become the best version of you."}
+                        />
                     </div>
                     <div className="accordian3 mt-20">
-                    <Accordian
-                    h1={"ARE THERE ANY RISKS?"}
-                     />
+                        <Accordian
+                            h1={"ARE THERE ANY RISKS?"}
+                        />
                     </div>
                     <div className="accordian4 mt-20">
-                    <Accordian 
-                    h1={"WHAT ABOUT AFTERCARE?"}
-                  
-                    />
+                        <Accordian
+                            h1={"WHAT ABOUT AFTERCARE?"}
+
+                        />
                     </div>
                     <div className="accordian5 mt-20">
-                    <Accordian 
-                    h1={"WHAT CAN I EXPECT ON THIS DAY?"}
-                    />
+                        <Accordian
+                            h1={"WHAT CAN I EXPECT ON THIS DAY?"}
+                        />
 
                     </div>
-             
-          
+
+
                 </div>
-          
-            </div>
+
+            </div> */}
 
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-60  bg-lightGray p-8 py-16 mr-60 relative">

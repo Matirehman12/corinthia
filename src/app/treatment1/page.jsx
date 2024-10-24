@@ -45,7 +45,7 @@ export default function Treatment1() {
                 <ReactMultiCarousel />
             </div>
 
-            <div className="grid ld:grid-cols-2 gap-4 mt-40">
+            <div className="grid lg:grid-cols-2 gap-4 mt-40">
                 <div className="leftDiv mx-10 xl:mx-20 text-1xl mt-8 xl:px-28">
                     <p className="mb-4 font-caslon text-2xl font-normal text-gray">{localization.treatment1.refreshYourLook}</p>
                     <p className="mb-4 font-caslon text-2xl font-normal text-gray">{localization.treatment1.treatmentAreasInclude}:</p>
