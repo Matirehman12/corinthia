@@ -37,7 +37,7 @@ export default function Treatment2() {
                     <div className="textContainer ">
                         <div className="hrDiv flex">
                             <h1 className='text-4xl font-caslon font-normal'>ANTI-WRINKLE <br /> INJECTIONS</h1>
-                            <div class="border-l-2 border-gray-300  ml-10 h-[170px] z-50"></div>
+                            <div className="border-l-2 border-gray-300  ml-10 h-[170px] z-50"></div>
 
                             <span className='mt-8 font-normal text-1xl ml-10 font-caslon'> At a glance </span>
                         </div>
