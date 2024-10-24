@@ -16,6 +16,9 @@ module.exports = {
         lightGray: '#F7F6F4',
         bgGray: '#EBEBEB',
         bgDarkGray: '#F7F7F7',
+        btnGolden: ' #BB975B',
+        darkGray: '#E9E6DF',
+
 
       },
       fontFamily: {

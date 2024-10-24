@@ -2,7 +2,6 @@
 
 import surgicalAsthetic3 from '../../images/surgicalAsthetic3.svg';
 import containerImg5 from '../../images/containerImg5.svg';
-import expandImg from '../../images/expandImg.svg';
 import testemonialsImg from '../../images/testemonialsImg.svg';
 import after from '../../images/after.svg';
 import after1 from '../../images/after1.svg';
@@ -10,6 +9,8 @@ import containerImg from '../../images/containerImg.svg';
 import relatedImg1 from '../../images/relatedImg1.svg';
 import relatedImg2 from '../../images/relatedImg2.svg';
 import LogoSection from '@/components/logosection/LogoSection';
+import Accordian from '@/components/accordian/Accordian';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 import arrowIcon from '../../images/arrowIcon.svg';
 
@@ -66,99 +67,40 @@ export default function Treatment2() {
             </div>
 
 
-            <div className="container ">
-                <div className="grid grid-cols-1 mt-20">
-                    <h1 className='d-flex items-center text-center text-4xl font-caslon justify-center'>FAQs</h1>
-                    <div className="flex flex-col items-center justify-center mx-40 my-10">
-                        <div className="w-full  border border-gray-300 p-4 flex flex-col items-center">
-                            <h2 className="text-2xl font-caslon font-medium text-center">
-                                IS THIS TREATMENT SUITABLE FOR ME?
-                            </h2>
-
-                            <div className="flex items-center justify-center w-full mt-2">
-
-                                <Image
-                                    src={expandImg}
-                                    className='absolute  translate-y-1/2'
-
-                                />
-
-                            </div>
-                        </div>
+            <div className="container mx-auto mt-20 mb-20">
+                <div className="grid grid-cols-1">
+                    <h1 className='text-5xl font-caslon text-center mb-4'>FAQ</h1>
+                    <div className="accordian1 ">
+                    <Accordian
+                    h1={"IS THIS TREATMENT SUITABLE FOR ME?"}
+                     />
                     </div>
-                    <div className="flex flex-col items-center justify-center mx-40 my-10">
-                        <div className="w-full  border border-gray-300 p-4 flex flex-col items-center">
-                            <h2 className="text-2xl font-caslon font-medium text-center">
-                                WHAT RESULT CAN I EXPECT?
-                            </h2>
-                            <p className='text-center font-caslon mx-40 mt-3'>We believe health and wellbeing should be balanced in order to achieve optimal beauty. Treatments are seen as ‘a journey to a new you’ and we support all clients with bespoke treatment plans to ensure you see the best results. Emphasis is placed on subtle balancing, restoring, and enhancing your natural beauty, to ensure you feel empowered to become the best version of you.</p>
-
-                            <div className="flex items-center justify-center w-full mt-2">
-
-                                <Image
-                                    src={expandImg}
-                                    className='absolute  translate-y-1/2'
-
-                                />
-
-                            </div>
-                        </div>
+                    <div className="accordian2 mt-20">
+                    <Accordian
+                    h1={"WHAT RESULT CAN I EXPECT?"}
+                    p={"We believe health and wellbeing should be balanced in order to achieve optimal beauty. Treatments are seen as ‘a journey to a new you’ and we support all clients with bespoke treatment plans to ensure you see the best results. Emphasis is placed on subtle balancing, restoring, and enhancing your natural beauty, to ensure you feel empowered to become the best version of you."}
+                     />
                     </div>
-                    <div className="flex flex-col items-center justify-center mx-40 my-10">
-                        <div className="w-full  border border-gray-300 p-4 flex flex-col items-center">
-                            <h2 className="text-2xl  font-medium text-center">
-                                ARE THERE ANY RISKS?
-                            </h2>
-
-
-                            <div className="flex items-center justify-center w-full mt-2">
-
-                                <Image
-                                    src={expandImg}
-                                    className='absolute  translate-y-1/2'
-
-                                />
-
-                            </div>
-                        </div>
+                    <div className="accordian3 mt-20">
+                    <Accordian
+                    h1={"ARE THERE ANY RISKS?"}
+                     />
                     </div>
-                    <div className="flex flex-col items-center justify-center mx-40 my-10">
-                        <div className="w-full  border border-gray-300 p-4 flex flex-col items-center">
-                            <h2 className="text-2xl  font-medium text-center">
-                                WHAT ABOUT AFTERCARE?
-                            </h2>
-
-                            <div className="flex items-center justify-center w-full mt-2">
-
-                                <Image
-                                    src={expandImg}
-                                    className='absolute  translate-y-1/2'
-
-                                />
-
-                            </div>
-                        </div>
+                    <div className="accordian4 mt-20">
+                    <Accordian 
+                    h1={"WHAT ABOUT AFTERCARE?"}
+                  
+                    />
                     </div>
-                    <div className="flex flex-col items-center justify-center mx-40 my-10">
-                        <div className="w-full  border border-gray-300 p-4 flex flex-col items-center">
-                            <h2 className="text-2xl  font-medium text-center">
-                                WHAT CAN I EXPECT ON THIS DAY?
-                            </h2>
-
-                            <div className="flex items-center justify-center w-full mt-2">
-
-                                <Image
-                                    src={expandImg}
-                                    className='absolute  translate-y-1/2'
-
-                                />
-
-                            </div>
-                        </div>
+                    <div className="accordian5 mt-20">
+                    <Accordian 
+                    h1={"WHAT CAN I EXPECT ON THIS DAY?"}
+                    />
                     </div>
-
-
+             
+          
                 </div>
+          
             </div>
 
 
@@ -342,6 +284,8 @@ export default function Treatment2() {
             <div className="logoSection">
                 <LogoSection />
             </div>
+
+            {/* <Accordian /> */}
 
 
 
