@@ -16,6 +16,9 @@ import arrowIcon from '../../images/arrowIcon.svg';
 import Image from "next/image";
 import NewsLetter from '@/components/newsletter/NewsLetter';
 import Footer from '@/components/footer/Footer';
+import { localization } from '@/localization';
+
+import bottomLines from '@/images/bottomLines.svg'
 
 
 export default function Treatment2() {
@@ -36,29 +39,29 @@ export default function Treatment2() {
                     </div>
                     <div className="textContainer ">
                         <div className="hrDiv flex">
-                            <h1 className='text-4xl font-caslon font-normal'>ANTI-WRINKLE <br /> INJECTIONS</h1>
+                            <h1 className='text-4xl font-caslon font-normal w-1/2'>{localization.treatment2.antiWrinkleInjection}</h1>
                             <div className="border-l-2 border-gray-300  ml-10 h-[170px] z-50"></div>
 
-                            <span className='mt-8 font-normal text-1xl ml-10 font-caslon'> At a glance </span>
+                            <span className='mt-8 font-normal text-1xl ml-10 font-caslon'>{localization.treatment2.atAglace}</span>
                         </div>
                         <div className="textDiv bg-customGold mr-40 pt-10 pb-10">
-                            <p className='text-large font-normal text-white mx-20 font-caslon  mb-5'>
-                                Refresh your look with anti-wrinkle injections to smooth existing wrinkles and to help prevent the formation of new ones. Relaxing the muscles with carefully placed anti-wrinkle injections can quickly and effectively create a more youthful look and relax those expression lines that can cause you to look tired and sometimes even angry and detract from your natural glow.
+                            <p className='text-large font-base text-white mx-20 font-caslon  mb-5'>
+                                {localization.treatment2.refreshYourLook}
                             </p>
                             <p className=' mb-5 text-white text-1xl ml-20 font-caslon'>Treatment areas include :</p>
                             <ul className="list-disc list-inside font-caslon mx-20 mb-5 text-white text-1xl">
-                                <li>Forehead lines</li>
-                                <li>Crow’s feet around the eyes</li>
-                                <li>Smile & Frown lines</li>
-                                <li>Neck lines – Platysma bands</li>
-                                <li>Décolletage to jaw-line – Nefertiti lift</li>
-                                <li>Puckering (orange peel) chin</li>
-                                <li>Gummy smile</li>
-                                <li>Chemical brow lift</li>
-                                <li>Bunny lines</li>
+                                {localization.treatment2.treatmentAreas.map((area, index) => (
+                                    <li key={index}>{area}</li>
+                                ))}
                             </ul>
                             <p className="mt-4 text-1xl font-normal mx-20 mb-5 font-caslon text-white">
-                                A reliable treatment that can work from around 3-4 days to smooth the skin results are individual but can last from three to six months <br /> <br /> When expertly administered, toxin injections can do more than simply reduce the look of facial lines and wrinkles. Brows can be lifted, the lip flipped for a more voluminous look and noses prevented from drooping. <br /> <br /> Anti-wrinkle or toxin injections also have multiple non-aesthetic benefits as well, such as the treatment of excessive sweating, bruxism teeth-clenching and migraines.  Book in a consultation to discuss your treatment needs.
+                                {localization.treatment2.reliableTreatmentText1}
+                            </p>
+                            <p className="mt-4 text-1xl font-normal mx-20 mb-5 font-caslon text-white">
+                                {localization.treatment2.reliableTreatmentText2}
+                            </p>
+                            <p className="mt-4 text-1xl font-normal mx-20 mb-5 font-caslon text-white">
+                                {localization.treatment2.reliableTreatmentText3}
                             </p>
                         </div>
 
@@ -172,9 +175,9 @@ export default function Treatment2() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-60  bg-lightGray p-8 py-16 mr-60 relative">
 
                 <div className="flex flex-col items-start ml-[115px] ">
-                    <h1 className="text-4xl font-caslon font-bold mb-4">TESTIMONIALS</h1>
-                    <p className="text-lg text-gray-700 font-caslon mb-6">
-                        We value feedback from <br /> our clients, here are some <br /> of our recent testimonials.
+                    <h1 className="text-4xl font-caslon font-bold mb-4">{localization.treatment2.testimonials}</h1>
+                    <p className="text-lg text-gray-700 font-caslon mb-6 w-1/3">
+                        {localization.treatment2.weValueFeedback}
                     </p>
                     <div>
                         <Image
@@ -201,9 +204,9 @@ export default function Treatment2() {
 
                     <div className='w-[70%] bg-white p-8 py-20 mt-5'>
                         <p className="text-lg italic font-caslon mx-8 mb-4">
-                            This team are the most professional. I wouldn&apos;t trust anyone else with my injectables. Cham has been a great support through the years. I always leave feeling uplifted and empowered!
+                            {localization.treatment2.teamAreTheMostProfessional}
                         </p>
-                        <p className="text-lg font-semibold font-caslon text-right">Sarah</p>
+                        <p className="text-lg font-semibold font-caslon text-right">{localization.treatment2.sarah}</p>
                     </div>
                 </div>
             </div>
@@ -211,7 +214,7 @@ export default function Treatment2() {
             <div className="container mx-auto mt-[300px]">
                 <div className="grid grid-cols-1 mt-20">
                     <div className="text-center mb-10">
-                        <h1 className="text-4xl font-semibold">SEE THE RESULTS</h1>
+                        <h1 className="text-4xl font-semibold">{localization.treatment2.seeTheResult}</h1>
                         <hr className="w-24 mx-auto mt-4 border-black border-t-2" />
                     </div>
 
@@ -223,7 +226,7 @@ export default function Treatment2() {
                                 height={282}
                                 className="shadow-md w-full"
                             />
-                            <p className="text-center font-caslon font-normal text-base mt-3">Before</p>
+                            <p className="text-center font-caslon font-normal text-base mt-3">{localization.treatment2.before}</p>
                         </div>
                         <div className='mt-14'>
                             <Image
@@ -232,12 +235,12 @@ export default function Treatment2() {
                                 height={282}
                                 className="shadow-md w-full"
                             />
-                            <p className="text-center font-caslon font-normal text-base mt-3">After</p>
+                            <p className="text-center font-caslon font-normal text-base mt-3">{localization.treatment2.after}</p>
                         </div>
 
-                        <div className="text-center font-caslon font-normal text-base mt-16">
-                            <p className="text-1xl text-gray-600">
-                                We&apos;re proud of the results we < br /> achieve for our clients. Scroll <br /> to see more of our incredible <br /> patient before & afters.
+                        <div className="text-center font-caslon font-normal text-base mt-20 p-4">
+                            <p className="text-1xl text-gray-600 w-11/12">
+                                {localization.treatment2.proudOfResult}
                             </p>
                         </div>
                         <div className='mt-28'>
@@ -247,7 +250,7 @@ export default function Treatment2() {
                                 height={282}
                                 className="shadow-md w-full"
                             />
-                            <p className="text-center font-caslon font-normal text-base mt-3">Before</p>
+                            <p className="text-center font-caslon font-normal text-base mt-3">{localization.treatment2.before}</p>
 
                         </div>
                         <div className='mt-44'>
@@ -257,7 +260,7 @@ export default function Treatment2() {
                                 height={282}
                                 className="shadow-md w-full"
                             />
-                            <p className="text-center font-caslon font-normal text-base mt-3">After</p>
+                            <p className="text-center font-caslon font-normal text-base mt-3">{localization.treatment2.after}</p>
                         </div>
                     </div>
                 </div>
@@ -272,75 +275,89 @@ export default function Treatment2() {
                 />
             </div>
 
-            <div className="grid grid-cols-2 gap-10">
-                <div className="leftRelated mt-20">
-                    <h1 className='text-4xl font-caslon text-center'>RELATED TREATMENTS</h1>
-                    <div className="relatedImgs flex mt-10">
-                        <Image
-                            src={relatedImg1}
-                            alt='relatedImg1'
-                            width={400}
-                            height={800}
-                            className='h-[600px]'
-                        />
-                        <Image
-                            src={relatedImg2}
-                            alt='relatedImg2'
-                            width={400}
-                            height={800}
-                            className='h-[600px]'
-                        />
-                    </div>
+            <div className="grid grid-cols-2 items-center gap-10 relative">
+                <div>
+                    <h1 className='text-4xl font-caslon text-center  mt-20 mb-16'>{localization.treatment2.relatedTreatment}</h1>
+                    <div className="grid grid-cols-12">
+                        <div className="col-span-6">
+                            <Image
+                                src={relatedImg1}
+                                alt='relatedImg1'
+                                height={800}
+                                className='h-[600px] object-cover'
+                            />
+                        </div>
+                        <div className="col-span-6">
+                            <Image
+                                src={relatedImg2}
+                                alt='relatedImg2'
+                                height={800}
+                                className='h-[600px] object-cover'
+                            />
+                        </div>
 
-                </div>
-                <div className="rightRelated flex justify-center mt-20 flex-col ml-20">
-                    <h1 className="text-4xl font-caslon mb-20">RELATED <br /> CONDITIONS</h1>
-                    <div className="list-one font-caslon flex gap-10">
-                        <div className="flex items-center gap-10 mb-5">
-                            <p className='font-caslon font-normal text-2xl text-black'>Excessive sweating</p>
-                            <Image src={arrowIcon}
-                                alt='arrowIcon'
-                                className='h-[50px]'
-                            />
-                        </div>
-                        <div className="flex items-start gap-10 mb-5">
-                            <p className='font-caslon font-normal text-2xl text-black'>Teeth grindling & <br /> Jaw Line Slimming</p>
-                            <Image src={arrowIcon}
-                            alt='arrowIcon'
-                            />
-                        </div>
-                    </div>
-                    <div className="list-two font-caslon flex  gap-10 mb-5">
-                        <div className="flex items-start gap-8">
-                            <p className='font-caslon font-normal text-2xl text-black'>Tired Eyes, Eyebags  <br /> & Dark Circles</p>
-                            <Image src={arrowIcon}
-                            alt='arrowIcon'
-                            />
-                        </div>
-                        <div className="flex items-start gap-10 mb-5">
-                            <p className='font-caslon font-normal text-2xl text-black'>Thin Lips, Uneven <br /> Lips & Lip Lines</p>
-                            <Image src={arrowIcon}
-                            alt='arrowIcon'
-                            />
-                        </div>
-                    </div>
-                    <div className="list-three font-caslon mb-5 max-w-lg pb-20 border-b">
-                        <div className="flex items-center gap-20">
-                            <p className='font-caslon font-normal text-2xl text-black'>Anti-Ageing</p>
-                            <Image src={arrowIcon}
-                            alt='arrowIcon'
-                            />
-                        </div>
                     </div>
                 </div>
+                <div>
+                    <div className='grid grid-cols-12  mt-20 px-16'>
+                        <div className="col-span-12">
+                            <h1 className="text-4xl font-caslon mb-20 w-1/2">{localization.treatment2.relatedConditions}</h1>
+                        </div>
 
+                        <div className="col-span-6">
+                            <div className='w-[70%]'>
+                                <div className="flex justify-between items-center mb-10">
+                                    <p className='font-caslon font-normal text-2xl text-black'>{localization.treatment2.excessiveSweating}</p>
+                                    <Image src={arrowIcon}
+                                        alt='arrowIcon'
+                                        className='h-[50px]'
+                                    />
+                                </div>
+                                <div className="flex justify-between items-center mb-10">
+                                    <p className='font-caslon font-normal text-2xl text-black w-3/4'>{localization.treatment2.tiredEyesEyebagsDarkCircles}</p>
+                                    <Image src={arrowIcon}
+                                        alt='arrowIcon'
+                                    />
+                                </div>
+                                <div className="flex justify-between items-center mb-10">
+                                    <p className='font-caslon font-normal text-2xl text-black '>{localization.treatment2.antiAgeing}</p>
+                                    <Image src={arrowIcon}
+                                        alt='arrowIcon'
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-span-6">
+                            <div className='w-[70%]'>
+                                <div className="flex justify-between items-center mb-10">
+                                    <p className='font-caslon font-normal text-2xl text-black w-3/4'>{localization.treatment2.teethGrindlingJawLineSlimming}</p>
+                                    <Image src={arrowIcon}
+                                        alt='arrowIcon'
+                                    />
+                                </div>
+                                <div className="flex justify-between items-center mb-10">
+                                    <p className='font-caslon font-normal text-2xl text-black w-3/4'>{localization.treatment2.thinLipUnevenLipsLipLines}</p>
+                                    <Image src={arrowIcon}
+                                        alt='arrowIcon'
+                                    />
+                                </div>
+                            </div>
+                        </div>
+                        <div className="col-span-10 mt-10">
+                            <hr />
+                        </div>
+                    </div>
+                </div>
+                <div className='absolute w-full -z-10' >
+                    <Image src={bottomLines} alt='bottom-lines' />
+                </div>
             </div>
 
-            <div className="newsLetter">
+            <div className="newsLetter mt-20">
                 <NewsLetter />
             </div>
 
-            <div className="logoSection">
+            <div className="logoSection mt-72">
                 <LogoSection />
             </div>
 

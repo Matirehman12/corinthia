@@ -1,31 +1,39 @@
+import Image from "next/image";
+import TextField from "../textFileds/TextField";
+import newsLettBG from '@/images/newsLetterBgImg.svg'
+import { localization } from "@/localization";
 export default function NewsLetter() {
     return (
         <>
-            <div className="flex justify-center items-center min-h-screen">
-                <div className="grid grid-cols-1">
-                    <div className="mainDiv flex flex-col justify-center">
-                        <div className="header max-w-2xl text-center mt-20">
-                            <h1 className="text-4xl font-caslon bg-lightGray w-auto py-10 px-10">STAY IN THE LOOP</h1>
+            <div className="relative">
+                <div className="grid  justify-center items-center">
+                    <div className="me-32 mt-28">
+                        <div className="header text-center mt-28 ">
+                            <h1 className="text-[64px] font-caslon bg-lightGray w-auto py-10 px-16 pt-16">{localization.treatment2.stayInTheLoop}</h1>
+                        </div>
+                        <p className="mt-3 text-2xl font-caslon font-normal">{localization.treatment2.signUpToTheCorinthiaNewsletter}</p>
+
+                        <div className="grid grid-cols-12 gap-5 mt-3 items-center">
+                            <div className="col-span-6">
+                                <TextField
+                                    className='border-black'
+                                    placeholder='Name' />
+                            </div>
+                            <div className="col-span-6">
+                                <TextField
+                                    className='border-black'
+                                    placeholder="Email(required)"
+                                />
+                            </div>
                         </div>
 
-                        <p className="mt-3 font-caslon">Sign up to the Corinthia newsletter</p>
-
-                        <div className="inputDiv flex gap-5 mt-3 items-center">
-                            <input
-                                type="text"
-                                className="mb-2 p-1 border text-black border-gray-300"
-                                placeholder="Name"
-                            />
-                            <input
-                                type="text"
-                                className="mb-2 p-1 border text-black border-gray-300 "
-                                placeholder="Email(required)"
-                            />
+                        <div className="flex">
+                            <button className="text-2xl font-caslon text-end border-b-2 w-[50px] text-black mt-10 me-32 ms-auto px-0 py-0 uppercase">{localization.treatment2.submit} </button>
                         </div>
-
-
-                        <button className="text-1xl font-caslon border-b-2 w-[50px] text-black mt-10 ml-60 px-0 py-0">SUBMIT </button>
                     </div>
+                </div>
+                <div className="absolute top-0 right-28">
+                    <Image src={newsLettBG} />
                 </div>
             </div>
         </>

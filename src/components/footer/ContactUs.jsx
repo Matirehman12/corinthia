@@ -80,7 +80,7 @@ const ContactUs = () => {
                                 required
                             />
 
-                            <button className='bg-yellowGradient h-[60px] font-caslon font-normal text-lg leading-5 mt-5'>
+                            <button className='bg-yellowGradient h-[60px] font-caslon font-normal text-lg leading-5 mt-5 uppercase pt-2'>
                                 Send Message
                             </button>
                         </div>

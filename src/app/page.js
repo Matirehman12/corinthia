@@ -9,6 +9,7 @@ import CustomCarousel from "@/components/carousel/CustomCarousel";
 import Footer from "@/components/footer/Footer";
 import bottomLines from '../images/bottomLines.svg'
 import topLines from '../images/topLines.svg'
+import { localization } from "@/localization";
 
 
 
@@ -38,13 +39,10 @@ export default function Home() {
               <div className="col-span-10 lg:ps-40 md:ps-20">
                 <div className="surgical-asthetic mx-3">
                   <h4 className="text-4xl md:text-6xl font-caslon font-normal mt-[80px] md:w-[75%] uppercase">
-                    Award Winning
-                    Non surgical
-                    Aesthetic
-                    excellence
+                    {localization.awardWinningNonSurgical}
                   </h4>
                   <p className="font-base font-caslon font-gray md:w-[55%]">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                    {localization.dummyText2}
                   </p>
                 </div>
 
@@ -90,14 +88,11 @@ export default function Home() {
           background: 'linear-gradient(327.72deg, #FFFFFF 43.95%, #A9A9A9 141.81%)'
         }}>
         <div className="enhencementDiv col-span-12 p-6 py-32 mt-20 flex flex-col items-center justify-center text-center h-[auto]">
-          <h4 className="text-3xl md:text-6xl font-normal font-caslon text-[#2C2C2C] mb-6">
-            TRANSFORMATIVE <br />
-            ENHANCEMENTS
-
+          <h4 className="text-3xl md:text-6xl font-normal font-caslon text-[#2C2C2C] mb-6 md:w-[50%]">
+            {localization.transformativeEnhancement}
           </h4>
-          <p className="text-1xl font-normal font-caslon text-gray mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut <br /> enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat.
-
+          <p className="text-1xl font-normal font-caslon text-gray mb-6 md:w-1/2">
+            {localization.dummyText3}
           </p>
           <Image
             src={enhancementImg}
@@ -135,12 +130,10 @@ export default function Home() {
           />
         </div>
       </div>
-
-
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:relative lg:top-[-340px]">
         <div className="leftDiv mx-10 lg:mx-20 mt-20 z-40">
-          <h4 className="mb-5 text-3xl md:text-6xl font-caslon">TRUSTED SKIN EXPERTISE</h4>
-          <p className="text-2xl font-caslon text-gray lg:w-[80%]">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim </p>
+          <h4 className="mb-5 text-3xl md:text-6xl font-caslon">{localization.trustedSkinExpertise}</h4>
+          <p className="text-2xl font-caslon text-gray lg:w-[80%]">{localization.dummyText4} </p>
         </div>
         <div className="relative right-[50px]">
           <Image

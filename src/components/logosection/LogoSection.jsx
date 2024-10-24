@@ -11,8 +11,10 @@ export default function LogoSection() {
 
             <div className="container mx-auto">
                 <div className="grid grid-cols-1">
-                    <h1 className='text-5xl text-center'>FEATURED IN</h1>
-                    <div className="logoDiv flex  mt-10">
+                    <h1 className='text-5xl font-caslon font-normal text-center text-black'>FEATURED IN</h1>
+                </div>
+                <div className="grid grid-cols-6 mt-10">
+                    {/* <div className="logoDiv flex  mt-10"> */}
                         <Image
                             src={logo4}
                             alt='logo4'
@@ -40,10 +42,7 @@ export default function LogoSection() {
                             src={logo1}
                             alt='logo1'
                         />
-
-
-
-                    </div>
+                    {/* </div> */}
                 </div>
             </div>
 
