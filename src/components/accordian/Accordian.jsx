@@ -1,67 +1,70 @@
-// import Accordion from 'react-bootstrap/Accordion';
+import { useState } from "react";
+import expandImg from '../../images/expandImg.svg'
 import Image from "next/image";
-import expandImg from '../../images/expandImg.svg';
 
-function Accordian({ h1, p, }) {
+function Accordion({ accordianHeader, accordianBodyText }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggleAccordion = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
-    <></>
-    // <Accordion defaultActiveKey="none">
-    //   <Accordion.Item eventKey="0">
-    //     <Accordion.Header>
-    //       <div className="flex flex-col justify-center py-0 px-0 items-center w-full">
-    //         <h1 className="text-2xl text-center  font-caslon">{h1}</h1>
 
-    //       </div>
-    //       <style jsx global>{`
-    //         .accordion-button::after {
-    //           display: none !important;
-    //           width: 0 !important;
-    //         }
-                 
-    //           .accordion-body{
-    //            border: 1px solid #000 !important;
-    //            border-radius: 0 !important;
-    //           }
-    //             .accordion-item:focus,
-    //         .accordion-item:active {
-    //           border-top: none !important; /* Remove top border when active */
-    //         }
-    //             .accordion-button {
-    //           background-color: transparent !important;
-    //           border: 1px solid black !important;
-    //           border-radius: 0 !important;
-    //         }
-    //           .accordian-header:actvie{}
-    //         .accordion-button:not(.collapsed) {
-    //           background-color: transparent !important;
-    //           color: inherit !important;
-    //           box-shadow: none !important;
-    //           border: 1px solid black !important;
-    //           border-bottom: none !important;
-    //         }
-    //             .accordion-button:focus {
-    //           box-shadow: none !important;
-    //           outline: none !important;
-    //         }
-    //           .accordian-header{
-    //           border: 0 !important;
-    //           }
+    <>
+      <div className="container mx-auto">
+        <div className="grid grid-cols-1">
+          <div className="border border-gray-200">
+            <h2 id="accordion-collapse-heading">
+              <button
+                type="button"
+                className={`flex items-center rounded-none justify-between w-full p-5 font-medium text-gray-500 
+                ${isOpen ? 'border-b-0 bg-transparent' : ' border-gray-200 hover:bg-gray-100'} 
+                 `}
+                onClick={toggleAccordion}
+                aria-expanded={isOpen}
+                aria-controls="accordion-collapse-body"
+              >
+                <span className="text-2xl font-caslon text-center flex flex-col justify-center items-center w-full">{accordianHeader}</span>
 
-    //       `}</style>
-    //     </Accordion.Header>
-    //     <Accordion.Body>
-    //       <div className="btn-container flex flex-col justify-center text-center items-center">
-    //         <p className='font-caslon text-large w-[70%]'>  {p}</p>
-    //         <Image
-    //           src={expandImg}
-    //           alt='expandImg'
-    //           className='relative top-[34px] flex justify-center'
-    //         />
-    //       </div>
-    //     </Accordion.Body>
-    //   </Accordion.Item>
-    // </Accordion>
+
+              </button>
+              <div className="flex justify-center items-center">
+                <Image
+                  src={expandImg}
+                  alt="expandImg"
+                  className="relative top-[20px]"
+                />
+              </div>
+            </h2>
+            <div
+              id="accordion-collapse-body"
+              className={`overflow-hidden transition-all duration-500 ease-in-out relative ${isOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}`}
+              aria-labelledby="accordion-collapse-heading"
+            >
+              <div className="p-5  text-center  items-center">
+                <p className="text-lg font-normal font-caslon w-[67%] mx-auto items-center text-center">
+                  {accordianBodyText}
+                </p>
+
+                <div className="flex justify-center items-center">
+                <Image
+                  src={expandImg}
+                  alt="expandImg"
+                  className="absolute  z-20 mt-[20px]"
+                />
+              </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </>
+
   );
 }
 
-export default Accordian;
+export default Accordion;
