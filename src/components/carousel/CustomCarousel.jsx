@@ -44,17 +44,19 @@ const responsive = {
 
 export default function CustomCarousel() {
   return (
-    <Carousel responsive={responsive} draggable={true}>
+    <Carousel responsive={responsive} draggable={true} sliderClass="gap-3">
       {images.map((image, index) => (
         // <div className="image-container w-full flex-shrink-0" key={index}>
-          <Image
-            src={image}
-            alt={`Image ${index + 1}`}
-            height={300}
-            width={300}
-            className="h-[300px] w-full object-cover"
-            // style={{ height: '300px' }}
-          />
+        <Image
+          key={index}
+          src={image}
+          alt={`Image ${index + 1}`}
+          height={500}
+          width={300}
+          className="h-[500px] w-full object-cover rounded-[10px]"
+          loading="lazy"
+        // style={{ height: '300px' }}
+        />
         // </div>
       ))}
     </Carousel>
