@@ -28,6 +28,7 @@ export default function Home() {
         <div className="absolute top-0">
           <Image
             src={topLines}
+            alt="top-lines"
             className="w-full"
           />
         </div>
@@ -37,9 +38,9 @@ export default function Home() {
               <div className="col-span-10 lg:ps-40 md:ps-20">
                 <div className="surgical-asthetic mx-3">
                   <h4 className="text-4xl md:text-6xl font-caslon font-normal mt-[80px] md:w-[75%] uppercase">
-                    Award Winning 
-                    Non surgical 
-                    Aesthetic 
+                    Award Winning
+                    Non surgical
+                    Aesthetic
                     excellence
                   </h4>
                   <p className="font-base font-caslon font-gray md:w-[55%]">
@@ -52,12 +53,14 @@ export default function Home() {
               <div className="col-span-10 md:col-span-6">
                 <Image
                   src={surgicalAsthetic3}
+                  alt="surgicalAsthetic3"
                   className="md:mt-[400px] w-full mx-3 sticky top-0 z-20"
                 />
               </div>
               <div className="col-span-10 md:col-span-6">
                 <Image
                   src={surgicalAsthetic2}
+                  alt="surgicalAsthetic2"
                   className="w-full mx-3 sticky top-0 z-20"
                 />
 
@@ -68,6 +71,7 @@ export default function Home() {
           <div className="col-span-10 md:col-span-4">
             <Image
               src={surgicalAsthetic1}
+              alt="surgicalAsthetic1"
               className="md:mt-[80px] w-full mx-3 sticky top-0 z-20"
             />
           </div>
@@ -75,6 +79,7 @@ export default function Home() {
         <div className="absolute bottom-[-80px]">
           <Image
             src={bottomLines}
+            alt="bootomLines"
             className="w-full"
           />
         </div>
@@ -96,6 +101,7 @@ export default function Home() {
           </p>
           <Image
             src={enhancementImg}
+            alt="enhancementImg"
             width="1920px"
             height="331px"
           />
@@ -109,6 +115,7 @@ export default function Home() {
         <div className="image-container">
           <Image
             src={surgicalAsthetic3}
+            alt="surgicalAsthetic3"
             className="sticky top-0 z-20"
           />
         </div>
@@ -116,17 +123,19 @@ export default function Home() {
 
           <Image
             src={surgicalAsthetic2}
+            alt="surgicalAsthetic2"
             className="md:mt-[400px] w-full sticky top-0 z-20"
           />
         </div>
         <div className="image-container">
           <Image
             src={surgicalAsthetic1}
+            alt="surgicalAsthetic1"
             className="md:mt-[800px] sticky top-0 z-20"
           />
         </div>
       </div>
-      
+
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:relative lg:top-[-340px]">
         <div className="leftDiv mx-10 lg:mx-20 mt-20 z-40">
@@ -135,6 +144,7 @@ export default function Home() {
         </div>
         <div className="relative right-[50px]">
           <Image
+            alt="bgImage"
             src={bgImage}
           />
         </div>

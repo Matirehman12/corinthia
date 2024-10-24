@@ -30,6 +30,7 @@ export default function Treatment1() {
 
                         <Image
                             src={bgImage}
+                            alt="bgImage"
                             width={400}
                             height={913}
                         />
@@ -64,6 +65,7 @@ export default function Treatment1() {
                 <div className="rightDiv">
                     <Image
                         src={treatment1Img}
+                        alt="treatment1Img"
                         width={1180}
                         height={973}
                     />
@@ -73,17 +75,20 @@ export default function Treatment1() {
             <div className="grid grid-cols-3 gap-4 mx-20 mt-40">
                 <Image
                     src={surgicalAsthetic3}
+                    alt="surgicalAsthetic3"
                     width={1380}
                     height={861}
                 />
                 <Image
                     src={surgicalAsthetic2}
+                    alt="surgicalAsthetic2"
                     width={1380}
                     height={861}
 
                 />
                 <Image
                     src={surgicalAsthetic1}
+                    alt="surgicalAsthetic1"
                     width={1380}
                     height={861}
                 />

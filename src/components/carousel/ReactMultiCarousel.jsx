@@ -54,20 +54,21 @@ const responsive = {
 export default function ReactMultiCarousel() {
   return (
     <div className="relative overflow-hidden grid grid-cols-1">
-      <Carousel responsive={responsive} draggable={true}  sliderClass="gap-3">
-      {images.map((image, index) => (
-        // <div className="image-container w-full flex-shrink-0" key={index}>
+      <Carousel responsive={responsive} draggable={true} sliderClass="gap-3">
+        {images.map((image, index) => (
+          // <div className="image-container w-full flex-shrink-0" key={index}>
           <Image
+            key={index}
             src={image}
             alt={`Image ${index + 1}`}
             height={250}
             width={233}
             className="h-[250px]  object-cover rounded-[10px] "
-            // style={{ height: '300px' }}
+          // style={{ height: '300px' }}
           />
-        // </div>
-      ))}
-    </Carousel>
+          // </div>
+        ))}
+      </Carousel>
     </div>
   );
 }

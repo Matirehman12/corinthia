@@ -28,6 +28,7 @@ export default function Treatment2() {
                     <div className="imgContainer">
                         <Image
                             src={surgicalAsthetic3}
+                            alt="surgicalAsthetic3"
                             width={512}
                             height={1138}
                             className='ml-20'
@@ -81,6 +82,7 @@ export default function Treatment2() {
                                 <Image
                                     src={expandImg}
                                     className='absolute  translate-y-1/2'
+                                    alt="expandImage"
 
                                 />
 
@@ -99,6 +101,7 @@ export default function Treatment2() {
                                 <Image
                                     src={expandImg}
                                     className='absolute  translate-y-1/2'
+                                    alt="expandImage"
 
                                 />
 
@@ -117,6 +120,7 @@ export default function Treatment2() {
                                 <Image
                                     src={expandImg}
                                     className='absolute  translate-y-1/2'
+                                    alt="expandImage"
 
                                 />
 
@@ -134,6 +138,7 @@ export default function Treatment2() {
                                 <Image
                                     src={expandImg}
                                     className='absolute  translate-y-1/2'
+                                    alt="expandImage"
 
                                 />
 
@@ -151,6 +156,7 @@ export default function Treatment2() {
                                 <Image
                                     src={expandImg}
                                     className='absolute  translate-y-1/2'
+                                    alt="expandImage"
 
                                 />
 
@@ -189,12 +195,13 @@ export default function Treatment2() {
                             width={177}
                             height={163}
                             className='absolute -left-28 -top-3'
+                            alt="testemonialsImg"
                         />
                     </div>
 
-                    <div className='w-[70%] bg-white p-8 py-20 mt-5 '>
+                    <div className='w-[70%] bg-white p-8 py-20 mt-5'>
                         <p className="text-lg italic font-caslon mx-8 mb-4">
-                            This team are the most professional. I wouldn't trust anyone else with my injectables. Cham has been a great support through the years. I always leave feeling uplifted and empowered!
+                            This team are the most professional. I wouldn&apos;t trust anyone else with my injectables. Cham has been a great support through the years. I always leave feeling uplifted and empowered!
                         </p>
                         <p className="text-lg font-semibold font-caslon text-right">Sarah</p>
                     </div>
@@ -228,9 +235,9 @@ export default function Treatment2() {
                             <p className="text-center font-caslon font-normal text-base mt-3">After</p>
                         </div>
 
-                        <div className=" text-center font-caslon font-normal text-base mt-16">
+                        <div className="text-center font-caslon font-normal text-base mt-16">
                             <p className="text-1xl text-gray-600">
-                                We're proud of the results we < br /> achieve for our clients. Scroll <br /> to see more of our incredible <br /> patient before & afters.
+                                We&apos;re proud of the results we < br /> achieve for our clients. Scroll <br /> to see more of our incredible <br /> patient before & afters.
                             </p>
                         </div>
                         <div className='mt-28'>
@@ -259,6 +266,7 @@ export default function Treatment2() {
             <div className="grid grid-cols-1 mt-20">
                 <Image
                     src={containerImg}
+                    alt="containerImg"
                     className='w-full'
                     height={800}
                 />
@@ -270,12 +278,14 @@ export default function Treatment2() {
                     <div className="relatedImgs flex mt-10">
                         <Image
                             src={relatedImg1}
+                            alt='relatedImg1'
                             width={400}
                             height={800}
                             className='h-[600px]'
                         />
                         <Image
                             src={relatedImg2}
+                            alt='relatedImg2'
                             width={400}
                             height={800}
                             className='h-[600px]'
@@ -289,28 +299,37 @@ export default function Treatment2() {
                         <div className="flex items-center gap-10 mb-5">
                             <p className='font-caslon font-normal text-2xl text-black'>Excessive sweating</p>
                             <Image src={arrowIcon}
+                                alt='arrowIcon'
                                 className='h-[50px]'
                             />
                         </div>
                         <div className="flex items-start gap-10 mb-5">
                             <p className='font-caslon font-normal text-2xl text-black'>Teeth grindling & <br /> Jaw Line Slimming</p>
-                            <Image src={arrowIcon} />
+                            <Image src={arrowIcon}
+                            alt='arrowIcon'
+                            />
                         </div>
                     </div>
                     <div className="list-two font-caslon flex  gap-10 mb-5">
                         <div className="flex items-start gap-8">
                             <p className='font-caslon font-normal text-2xl text-black'>Tired Eyes, Eyebags  <br /> & Dark Circles</p>
-                            <Image src={arrowIcon} />
+                            <Image src={arrowIcon}
+                            alt='arrowIcon'
+                            />
                         </div>
                         <div className="flex items-start gap-10 mb-5">
                             <p className='font-caslon font-normal text-2xl text-black'>Thin Lips, Uneven <br /> Lips & Lip Lines</p>
-                            <Image src={arrowIcon} />
+                            <Image src={arrowIcon}
+                            alt='arrowIcon'
+                            />
                         </div>
                     </div>
                     <div className="list-three font-caslon mb-5 max-w-lg pb-20 border-b">
                         <div className="flex items-center gap-20">
                             <p className='font-caslon font-normal text-2xl text-black'>Anti-Ageing</p>
-                            <Image src={arrowIcon} />
+                            <Image src={arrowIcon}
+                            alt='arrowIcon'
+                            />
                         </div>
                     </div>
                 </div>
