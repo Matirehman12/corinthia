@@ -3,7 +3,7 @@ import ContactUs from './ContactUs'
 import { svgIcons } from '@/images'
 import Logo from '@/images/logo.svg'
 import Image from 'next/image'
-import footerBg from '@/images/footer-bg.svg'
+// import footerBg from '@/images/footer-bg.svg'
 const Footer = () => {
     return (
         <div className='footer-bg relative z-10'>
