@@ -32,7 +32,7 @@ export default function NewsLetter() {
                         </div>
                     </div>
                 </div>
-                <div className="absolute top-0 right-28">
+                <div className="absolute top-0 right-28 -z-10">
                     <Image src={newsLettBG} />
                 </div>
             </div>

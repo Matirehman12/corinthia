@@ -88,6 +88,24 @@ export const localization = {
         submit:"Submit"
         
 
+    },
+    information:{
+        patient:"PATIENT",
+        journey:"JOURNEY",
+        aJourneyToANewYou:"A JOURNEY TO A NEW YOU",
+        ourMedicalDirector:" Our medical director Charmelle believes health and wellbeing should be balanced in order to achieve optimal beauty. With a background in psychology, holistic health and healing, it is our goal to ensure all treatments performed protect the wellbeing of our clients. Focusing on subtle changes to the face and body can inspire us to lead a positive healthier lifestyle, which is fundamentally what we are about. Treatments are seen as ‘a journey to a new you’, and we support all clients with customised treatment plans and guidance to ensure they see optimum results. Emphasis is placed on subtle balancing, restoring, and enhancing beauty.",
+        lookGoodFeelGood:"LOOK GOOD & FEEL GOOD",
+        weRealiseTheWay:"We realise the way that we look greatly affects our self-  confidence and body image perception. Feeling dissatisfied with our features, body, or skin can lead to depression, insecurity and withdrawal from certain situations and relationships. Often, aesthetic treatments can have a great impact on our psychological wellbeing and body confidence.",
+        yourContant:"YOUR CONSULTANT",
+        clientsStartWithAMedicalLifestyle:"clients start with a medical lifestyle consultation virtually or in clinic. Your detailed medical and aesthetic history will be discussed, including your goals and desires. You can expect to have a face and skin analysis, these unique assessments will confirm which treatments are most suitable for you. We will discuss realistic outcomes and expectations from each treatment, as well as any lifestyle changes that may be suitable including referrals to our in-house team.",
+        book:"BOOK",
+        togetherBespoke :"Together a bespoke treatment plan will be devised to ensure you feel empowered to become the best version of you.",
+        yourTreatment:"YOUR TREATMENT",
+        weStriveToDeliverExcellence:"We strive to deliver excellence with a personal touch. All treatments are performed professionally and discretely by our expert team. We have implemented industry leading COVID-19 protocols and procedures, which we kindly ask you to follow.",
+        onEnteringTheClinic:"On entering the clinic, you will be required to use hand sanitisers,have your temperature taken and complete a questionnaire to update us on your health and wellbeing. All treatment rooms are sanitized between clientsfor your safety. We hope this helps you to feel comfortable to fully enjoy your experience with us.",
+        afterCare:"AFTER CARE",
+        yourAftercareWillBeDiscussed:" Your aftercare will be discussed with your Practitioner following your treatment, you will also receive this by email. We are on hand to support your unique journey and welcome you to call or email us if you were to have any concerns. Including an out of hours emergency contact, for your complete reassurance."
+
     }
 
 

@@ -11,9 +11,9 @@ export default function LogoSection() {
 
             <div className="container mx-auto">
                 <div className="grid grid-cols-1">
-                    <h1 className='text-5xl font-caslon font-normal text-center text-black'>FEATURED IN</h1>
+                    <h1 className='text-2xl md:text-5xl font-caslon font-normal text-center text-black'>FEATURED IN</h1>
                 </div>
-                <div className="grid grid-cols-6 mt-10">
+                <div className="grid grid-cols-6 mt-10 overflow-auto">
                     {/* <div className="logoDiv flex  mt-10"> */}
                         <Image
                             src={logo4}

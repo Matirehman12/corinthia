@@ -7,6 +7,10 @@ import ReactMultiCarousel from "@/components/carousel/ReactMultiCarousel";
 import treatment1Img from '../../images/treatment1Img.svg'
 import Footer from '@/components/footer/Footer';
 import { localization } from '@/localization';
+import topLines from '@/images/topLines.svg'
+import bottomLines from '@/images/bottomLines.svg'
+
+import treatment1TopLines from '@/images/treatment1TopLines.svg'
 
 export default function Treatment1() {
     return (
@@ -44,25 +48,27 @@ export default function Treatment1() {
             <div className="grid grid-cols-1 mt-20 lg:mt-0">
                 <ReactMultiCarousel />
             </div>
-
-            <div className="grid lg:grid-cols-2 gap-4 mt-40">
-                <div className="leftDiv mx-10 xl:mx-20 text-1xl mt-8 xl:px-28">
-                    <p className="mb-4 font-caslon text-2xl font-normal text-gray">{localization.treatment1.refreshYourLook}</p>
-                    <p className="mb-4 font-caslon text-2xl font-normal text-gray">{localization.treatment1.treatmentAreasInclude}:</p>
-                    <ul className="list-disc ml-4 font-caslon text-xl font-normal text-gray">
-                        {localization.treatment1.treatmentAreas.map((area, index) => (
-                            <li key={index}>{area}</li>
-                        ))}
-                    </ul>
-                    <p className="mt-4 font-caslon text-2xl font-normal text-gray">{localization.treatment1.reliableTreatmentText}</p>
-                </div>
-                <div className="rightDiv">
-                    <Image
-                        src={treatment1Img}
-                        alt="treatment1Img"
-                        width={1180}
-                        height={973}
-                    />
+            <div className='relative'>
+                <Image src={treatment1TopLines} alt='topLines' className='absolute -top-[700px] -z-10' />
+                <div className="grid lg:grid-cols-2 gap-4 mt-40 ">
+                    <div className="leftDiv mx-10 xl:mx-20 text-1xl mt-8 xl:px-28">
+                        <p className="mb-4 font-caslon text-2xl font-normal text-gray">{localization.treatment1.refreshYourLook}</p>
+                        <p className="mb-4 font-caslon text-2xl font-normal text-gray">{localization.treatment1.treatmentAreasInclude}:</p>
+                        <ul className="list-disc ml-4 font-caslon text-xl font-normal text-gray">
+                            {localization.treatment1.treatmentAreas.map((area, index) => (
+                                <li key={index}>{area}</li>
+                            ))}
+                        </ul>
+                        <p className="mt-4 font-caslon text-2xl font-normal text-gray">{localization.treatment1.reliableTreatmentText}</p>
+                    </div>
+                    <div className="rightDiv">
+                        <Image
+                            src={treatment1Img}
+                            alt="treatment1Img"
+                            width={1180}
+                            height={973}
+                        />
+                    </div>
                 </div>
             </div>
 
@@ -89,7 +95,8 @@ export default function Treatment1() {
             </div>
 
 
-            <div className='mt-28 px-10 md:ps-28'>
+            <div className='mt-28 px-10 md:ps-28 relative'>
+                <Image src={treatment1TopLines} alt='topLines' className='absolute left-0 -top-[550px] w-full -z-10' />
                 <div className="grid grid-cols-1">
                     <h1 className="text-4xl font-caslon font-noraml mb-2">{localization.treatment1.frequently}</h1>
                     <h1 className="text-4xl font-caslon font-noraml mb-10">{localization.treatment1.askedQuestion}</h1>

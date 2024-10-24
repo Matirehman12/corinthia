@@ -20,54 +20,57 @@ import { localization } from '@/localization';
 
 import bottomLines from '@/images/bottomLines.svg'
 
+import treatment1TopLines from '@/images/treatment1TopLines.svg'
 
 export default function Treatment2() {
 
     return (
 
         <>
-            <div className="container mx-auto mt-20">
-                <div className="grid grid-cols-2 gap-10">
-                    <div className="imgContainer">
-                        <Image
-                            src={surgicalAsthetic3}
-                            alt="surgicalAsthetic3"
-                            width={512}
-                            height={1138}
-                            className='ml-20'
-                        />
-                    </div>
-                    <div className="textContainer ">
-                        <div className="hrDiv flex">
-                            <h1 className='text-4xl font-caslon font-normal w-1/2'>{localization.treatment2.antiWrinkleInjection}</h1>
-                            <div className="border-l-2 border-gray-300  ml-10 h-[170px] z-50"></div>
-
-                            <span className='mt-8 font-normal text-1xl ml-10 font-caslon'>{localization.treatment2.atAglace}</span>
+            <div className='relative'>
+                <div className="container mx-auto mt-20 ">
+                    <div className="grid grid-cols-2 gap-10">
+                        <div className="imgContainer">
+                            <Image
+                                src={surgicalAsthetic3}
+                                alt="surgicalAsthetic3"
+                                width={512}
+                                height={1138}
+                                className='ml-20'
+                            />
                         </div>
-                        <div className="textDiv bg-customGold mr-40 pt-10 pb-10">
-                            <p className='text-large font-base text-white mx-20 font-caslon  mb-5'>
-                                {localization.treatment2.refreshYourLook}
-                            </p>
-                            <p className=' mb-5 text-white text-1xl ml-20 font-caslon'>Treatment areas include :</p>
-                            <ul className="list-disc list-inside font-caslon mx-20 mb-5 text-white text-1xl">
-                                {localization.treatment2.treatmentAreas.map((area, index) => (
-                                    <li key={index}>{area}</li>
-                                ))}
-                            </ul>
-                            <p className="mt-4 text-1xl font-normal mx-20 mb-5 font-caslon text-white">
-                                {localization.treatment2.reliableTreatmentText1}
-                            </p>
-                            <p className="mt-4 text-1xl font-normal mx-20 mb-5 font-caslon text-white">
-                                {localization.treatment2.reliableTreatmentText2}
-                            </p>
-                            <p className="mt-4 text-1xl font-normal mx-20 mb-5 font-caslon text-white">
-                                {localization.treatment2.reliableTreatmentText3}
-                            </p>
-                        </div>
+                        <div className="textContainer ">
+                            <div className="hrDiv flex">
+                                <h1 className='text-4xl font-caslon font-normal w-1/2'>{localization.treatment2.antiWrinkleInjection}</h1>
+                                <div className="border-l-2 border-gray-300  ml-10 h-[170px] z-50"></div>
 
+                                <span className='mt-8 font-normal text-1xl ml-10 font-caslon'>{localization.treatment2.atAglace}</span>
+                            </div>
+                            <div className="textDiv bg-customGold mr-40 pt-10 pb-10">
+                                <p className='text-large font-base text-white mx-20 font-caslon  mb-5'>
+                                    {localization.treatment2.refreshYourLook}
+                                </p>
+                                <p className=' mb-5 text-white text-1xl ml-20 font-caslon'>Treatment areas include :</p>
+                                <ul className="list-disc list-inside font-caslon mx-20 mb-5 text-white text-1xl">
+                                    {localization.treatment2.treatmentAreas.map((area, index) => (
+                                        <li key={index}>{area}</li>
+                                    ))}
+                                </ul>
+                                <p className="mt-4 text-1xl font-normal mx-20 mb-5 font-caslon text-white">
+                                    {localization.treatment2.reliableTreatmentText1}
+                                </p>
+                                <p className="mt-4 text-1xl font-normal mx-20 mb-5 font-caslon text-white">
+                                    {localization.treatment2.reliableTreatmentText2}
+                                </p>
+                                <p className="mt-4 text-1xl font-normal mx-20 mb-5 font-caslon text-white">
+                                    {localization.treatment2.reliableTreatmentText3}
+                                </p>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-
+                <Image src={treatment1TopLines} alt='topLines' className='absolute top-32 -z-10' />
             </div>
 
 
@@ -286,7 +289,7 @@ export default function Treatment2() {
                         </div>
                     </div>
                 </div>
-                <div className='absolute w-full -z-10' >
+                <div className='absolute w-full top-0 -z-10' >
                     <Image src={bottomLines} alt='bottom-lines' />
                 </div>
             </div>
