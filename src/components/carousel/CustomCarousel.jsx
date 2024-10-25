@@ -10,10 +10,10 @@ import surgicalAsthetic1 from '../../images/surgicalAsthetic1.svg';
 import containerImg2 from '../../images/containerImg2.svg';
 
 const images = [
-  surgicalAsthetic3,
+  surgicalAsthetic1,
   containerImg5,
   surgicalAsthetic2,
-  surgicalAsthetic1,
+  surgicalAsthetic3,
   containerImg2,
   surgicalAsthetic3,
   containerImg5,

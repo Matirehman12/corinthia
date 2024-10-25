@@ -57,7 +57,7 @@ const Footer = () => {
 
                         </div>
                         {/* </div> */}
-                        <div className='md:flex items-center gap-5 py-5 mt-16'>
+                        <div className='md:flex items-center xl:gap-10 py-5 mt-16'>
                             <Image
                                 src={Logo}
                                 alt="brand logo"
