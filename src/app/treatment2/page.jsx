@@ -74,39 +74,39 @@ export default function Treatment2() {
             </div>
 
 
-        <div className="grid grid-cols-1 mt-20">
-        <h1 className="text-4xl text-center font-caslon mb-4">FAQ</h1>
-        </div>
-         <div className='mt-10 mb-20'>
-         <Accordian 
-         accordianHeader={"IS THIS TREATMENT SUITABLE FOR ME?"}
-         accordianBodyText={"We believe health and wellbeing should be balanced in order to achieve optimal beauty. Treatments are seen as ‘a journey to a new you’ and we support all clients with bespoke treatment plans to ensure you see the best results. Emphasis is placed on subtle balancing, restoring, and enhancing your natural beauty, to ensure you feel empowered to become the best version of you."}
-         />
-         </div>
-         <div className='mt-20 mb-20'>
-         <Accordian 
-         accordianHeader={"WHAT RESULT CAN I EXPECT?"}
-         accordianBodyText={"We believe health and wellbeing should be balanced in order to achieve optimal beauty. Treatments are seen as ‘a journey to a new you’ and we support all clients with bespoke treatment plans to ensure you see the best results. Emphasis is placed on subtle balancing, restoring, and enhancing your natural beauty, to ensure you feel empowered to become the best version of you."}
-         />
-         </div>
-         <div className='mt-20 mb-20'>
-         <Accordian 
-         accordianHeader={"ARE THERE ANY RISKS?"}
-         accordianBodyText={"We believe health and wellbeing should be balanced in order to achieve optimal beauty. Treatments are seen as ‘a journey to a new you’ and we support all clients with bespoke treatment plans to ensure you see the best results. Emphasis is placed on subtle balancing, restoring, and enhancing your natural beauty, to ensure you feel empowered to become the best version of you."}
-         />
-         </div>
-         <div className='mt-20 mb-20'>
-         <Accordian 
-         accordianHeader={"WHAT ABOUT AFTERCARE?"}
-         accordianBodyText={"We believe health and wellbeing should be balanced in order to achieve optimal beauty. Treatments are seen as ‘a journey to a new you’ and we support all clients with bespoke treatment plans to ensure you see the best results. Emphasis is placed on subtle balancing, restoring, and enhancing your natural beauty, to ensure you feel empowered to become the best version of you."}
-         />
-         </div>
-         <div className='mt-20 mb-20'>
-         <Accordian 
-         accordianHeader={"WHAT CAN I EXPECT ON THIS DAY?"}
-         accordianBodyText={"We believe health and wellbeing should be balanced in order to achieve optimal beauty. Treatments are seen as ‘a journey to a new you’ and we support all clients with bespoke treatment plans to ensure you see the best results. Emphasis is placed on subtle balancing, restoring, and enhancing your natural beauty, to ensure you feel empowered to become the best version of you."}
-         />
-         </div>
+            <div className="grid grid-cols-1 mt-44">
+                <h1 className="text-4xl text-center font-caslon mb-4">FAQ</h1>
+            </div>
+            <div className='mt-10 mb-20'>
+                <Accordian
+                    accordianHeader={"IS THIS TREATMENT SUITABLE FOR ME?"}
+                    accordianBodyText={"We believe health and wellbeing should be balanced in order to achieve optimal beauty. Treatments are seen as ‘a journey to a new you’ and we support all clients with bespoke treatment plans to ensure you see the best results. Emphasis is placed on subtle balancing, restoring, and enhancing your natural beauty, to ensure you feel empowered to become the best version of you."}
+                />
+            </div>
+            <div className='mt-20 mb-20'>
+                <Accordian
+                    accordianHeader={"WHAT RESULT CAN I EXPECT?"}
+                    accordianBodyText={"We believe health and wellbeing should be balanced in order to achieve optimal beauty. Treatments are seen as ‘a journey to a new you’ and we support all clients with bespoke treatment plans to ensure you see the best results. Emphasis is placed on subtle balancing, restoring, and enhancing your natural beauty, to ensure you feel empowered to become the best version of you."}
+                />
+            </div>
+            <div className='mt-20 mb-20'>
+                <Accordian
+                    accordianHeader={"ARE THERE ANY RISKS?"}
+                    accordianBodyText={"We believe health and wellbeing should be balanced in order to achieve optimal beauty. Treatments are seen as ‘a journey to a new you’ and we support all clients with bespoke treatment plans to ensure you see the best results. Emphasis is placed on subtle balancing, restoring, and enhancing your natural beauty, to ensure you feel empowered to become the best version of you."}
+                />
+            </div>
+            <div className='mt-20 mb-20'>
+                <Accordian
+                    accordianHeader={"WHAT ABOUT AFTERCARE?"}
+                    accordianBodyText={"We believe health and wellbeing should be balanced in order to achieve optimal beauty. Treatments are seen as ‘a journey to a new you’ and we support all clients with bespoke treatment plans to ensure you see the best results. Emphasis is placed on subtle balancing, restoring, and enhancing your natural beauty, to ensure you feel empowered to become the best version of you."}
+                />
+            </div>
+            <div className='mt-20 mb-20'>
+                <Accordian
+                    accordianHeader={"WHAT CAN I EXPECT ON THIS DAY?"}
+                    accordianBodyText={"We believe health and wellbeing should be balanced in order to achieve optimal beauty. Treatments are seen as ‘a journey to a new you’ and we support all clients with bespoke treatment plans to ensure you see the best results. Emphasis is placed on subtle balancing, restoring, and enhancing your natural beauty, to ensure you feel empowered to become the best version of you."}
+                />
+            </div>
 
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-60  bg-lightGray p-8 py-16 mr-60 relative">

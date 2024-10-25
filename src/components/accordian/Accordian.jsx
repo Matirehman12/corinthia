@@ -18,28 +18,32 @@ function Accordion({ accordianHeader, accordianBodyText }) {
             <h2 id="accordion-collapse-heading">
               <button
                 type="button"
-                className={`flex items-center rounded-none justify-between w-full p-5 font-medium text-gray-500 
+                className={`flex items-center rounded-none justify-between w-full p-5 font-medium text-gray-500  pb-0
                 ${isOpen ? 'border-b-0 bg-transparent' : ' border-gray-200 hover:bg-gray-100'} 
                  `}
                 onClick={toggleAccordion}
                 aria-expanded={isOpen}
                 aria-controls="accordion-collapse-body"
               >
-                <span className="text-2xl font-caslon text-center flex flex-col justify-center items-center w-full">{accordianHeader}</span>
+                <span className="text-2xl font-caslon text-center flex flex-col justify-center items-center w-full pt-7">{accordianHeader}</span>
 
 
               </button>
-              <div className="flex justify-center items-center">
-                <Image
-                  src={expandImg}
-                  alt="expandImg"
-                  className="relative top-[20px]"
-                />
-              </div>
+              {isOpen === false &&
+                <div className="flex justify-center items-center">
+                  <Image
+                    src={expandImg}
+                    alt="expandImg"
+                    className="relative top-[20px] cursor-pointer"
+                    onClick={toggleAccordion}
+                    aria-expanded={isOpen}
+                  />
+                </div>
+              }
             </h2>
             <div
               id="accordion-collapse-body"
-              className={`overflow-hidden transition-all duration-500 ease-in-out relative ${isOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}`}
+              className={`overflow-hidden transition-all duration-500 ease-in-out  ${isOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}`}
               aria-labelledby="accordion-collapse-heading"
             >
               <div className="p-5  text-center  items-center">
@@ -48,14 +52,16 @@ function Accordion({ accordianHeader, accordianBodyText }) {
                 </p>
 
                 <div className="flex justify-center items-center">
-                <Image
-                  src={expandImg}
-                  alt="expandImg"
-                  className="absolute  z-20 mt-[20px]"
-                />
+                  <Image
+                    src={expandImg}
+                    alt="expandImg"
+                    className="absolute z-20 mt-[40px] cursor-pointer"
+                    onClick={toggleAccordion}
+                    aria-expanded={isOpen}
+                  />
+                </div>
               </div>
-              </div>
-              
+
             </div>
           </div>
         </div>

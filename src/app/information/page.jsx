@@ -11,11 +11,13 @@ import NewsLetter from "@/components/newsletter/NewsLetter";
 import LogoSection from "@/components/logosection/LogoSection";
 import { localization } from "@/localization";
 import Footer from "@/components/footer/Footer";
+import treatment1TopLines from '@/images/treatment1TopLines.svg'
+
 export default function Information() {
     return (
         <>
             <div className="container mx-auto">
-                <div className="grid lg:grid-cols-2 mx-20 my-10 gap-10">
+                <div className="grid lg:grid-cols-2 mx-5 md:mx-20 my-10 gap-10">
                     <div className="img-container">
                         <Image
                             src={patientJourney}
@@ -46,8 +48,8 @@ export default function Information() {
             </div>
 
             <div className="container mx-auto mt-24">
-                <div className="lg:flex flex-row  gap-5 mx-20">
-                    <div className="consultant-container bg-black h-[750px] md:w-[490px] flex flex-col justify-between p-4">
+                <div className="lg:flex flex-row  gap-5 md:mx-20">
+                    <div className="consultant-container bg-black pb-20 md:w-[490px] flex flex-col justify-between p-4">
                         <h1 className="text-5xl mt-20 font-normal font-caslon text-white text-center">{localization.information.yourContant}</h1>
                         <p className="text-lg text-white  font-normal font-caslon xl:mx-16">
                             <span className="text-xl">All </span>{localization.information.clientsStartWithAMedicalLifestyle}
@@ -60,53 +62,56 @@ export default function Information() {
 
                         <div className="right-container  mt-20">
                             <Image src={consultantImg} className="" alt="ConsultantImg" />
-                            <p className="font-normal xl:ml-20  font-caslon mt-10 xl:w-[48%]">
+                            <p className="font-normal mx-5 xl:ml-20   font-caslon mt-10 xl:w-[48%]">
                                 {localization.information.togetherBespoke}
                             </p>
                         </div>
                     </div>
                 </div>
             </div>
-
-            <div className="grid grid-cols-12 gap-5">
-                <div className="col-span-12 lg:col-span-6 mt-24">
-                    <Image
-                        src={facialImg1}
-                        alt="facialImg1"
-                        className="h-[660px] object-cover"
-                    />
-                </div>
-                <div className="col-span-12 md:col-span-6 lg:col-span-3 mt-24">
-                    <Image
-                        src={facialImg2}
-                        alt="facialImg2"
-                        className="h-[660px] w-full object-cover"
-                    />
-                </div>
-                <div className="col-span-12 md:col-span-6 lg:col-span-3 mt-24">
-                    <Image
-                        src={facialImg3}
-                        alt="facialImg3"
-                        className="h-[660px] w-full object-cover"
-                    />
-                </div>
-            </div>
-            <div className="grid xl:grid-cols-2">
-                <div className="flex items-center gap-20 mt-10 md:ps-44">
-                    <hr className="border-l-2 border-gray-300 h-40 w-0 ml-10" />
-                    <div className="ml-10">
-                        <h1 className="text-4xl font-caslon font-normal mb-8">{localization.information.yourTreatment}</h1>
-                        <p className="text-lg font-caslon w-[77%]">
-                            {localization.information.weStriveToDeliverExcellence}
-                        </p>
+            <div className="relative">
+                <div className="grid grid-cols-12 gap-5">
+                    <div className="col-span-12 lg:col-span-6 mt-24">
+                        <Image
+                            src={facialImg1}
+                            alt="facialImg1"
+                            className="h-[660px] object-cover"
+                        />
+                    </div>
+                    <div className="col-span-12 md:col-span-6 lg:col-span-3 mt-24">
+                        <Image
+                            src={facialImg2}
+                            alt="facialImg2"
+                            className="h-[660px] w-full object-cover"
+                        />
+                    </div>
+                    <div className="col-span-12 md:col-span-6 lg:col-span-3 mt-24">
+                        <Image
+                            src={facialImg3}
+                            alt="facialImg3"
+                            className="h-[660px] w-full object-cover"
+                        />
                     </div>
                 </div>
-                <p className="text-lg font-caslon md:ms-52 lg:mx-60 mt-20">
-                    {localization.information.onEnteringTheClinic}
+                <div className="grid xl:grid-cols-2">
+                    <div className="flex items-center md:gap-20 mt-10 md:ps-44">
+                        <hr className="border-l-2 border-gray-300 h-40 w-0 ml-10" />
+                        <div className="ml-10">
+                            <h1 className="text-4xl font-caslon font-normal mb-8">{localization.information.yourTreatment}</h1>
+                            <p className="text-lg font-caslon w-[77%]">
+                                {localization.information.weStriveToDeliverExcellence}
+                            </p>
+                        </div>
+                    </div>
+                    <p className="text-lg font-caslon  mx-5 md:ms-52 lg:mx-60 mt-20">
+                        {localization.information.onEnteringTheClinic}
 
-                </p>
+                    </p>
+                </div>
+                <Image src={treatment1TopLines} alt='topLines' className='absolute top-72 -z-10' />
+
+
             </div>
-
             <div className="container mx-auto px-4">
                 <div className="grid grid-cols-12  items-center">
                     {/* Left Section with Images */}
@@ -147,8 +152,10 @@ export default function Information() {
                 </div>
             </div>
 
-            <div className="newsLetter mt-20">
+            <div className="newsLetter mt-20 relative">
                 <NewsLetter />
+                <Image src={treatment1TopLines} alt='topLines' className='absolute top-0 -z-10' />
+
             </div>
             <div className="logo-section md:mt-36 lg:mt-96">
                 <LogoSection />

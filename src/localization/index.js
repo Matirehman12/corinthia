@@ -1,3 +1,4 @@
+import Advertisement from "@/app/advertisement/page";
 
 export const localization = {
     getInTouch: 'Get in touch',
@@ -106,7 +107,14 @@ export const localization = {
         afterCare:"AFTER CARE",
         yourAftercareWillBeDiscussed:" Your aftercare will be discussed with your Practitioner following your treatment, you will also receive this by email. We are on hand to support your unique journey and welcome you to call or email us if you were to have any concerns. Including an out of hours emergency contact, for your complete reassurance."
 
+    },
+    Advertisement:{
+        hereBeautyBodyAndMindAlign:"here Beauty, Body and Mind Align",
+        bestSelling:"BEST SELLING",
+        treatment:"Treatment",
+        dummyText5:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat."
     }
+
 
 
 

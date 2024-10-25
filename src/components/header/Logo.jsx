@@ -23,7 +23,7 @@ const Logo = ({ className, props }) => {
                 // width={180}
                 // height={38}
                 priority
-                className="w-[180px] md:w-auto -me-10"
+                className="w-[160px] md:w-[340px] md:h-[145px]  -ms-[6px]"
             />
         </Link>
     );

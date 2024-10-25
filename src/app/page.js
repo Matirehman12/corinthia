@@ -35,13 +35,13 @@ export default function Home() {
         </div>
         <div className="grid grid-cols-12 gap-10 xl:px-20 bottom-lines relative z-10">
           <div className="col-span-10 md:col-span-8">
-            <div className="grid grid-cols-12 gap-10">
+            <div className="grid grid-cols-12 gap-10 mt-10">
               <div className="col-span-10 lg:ps-40 md:ps-20">
                 <div className="surgical-asthetic mx-3">
-                  <h4 className="text-4xl md:text-6xl font-caslon font-normal mt-[80px] md:w-[75%] uppercase">
+                  <h4 className="text-4xl md:text-6xl font-caslon font-normal mt-[100px] md:w-[75%] uppercase">
                     {localization.awardWinningNonSurgical}
                   </h4>
-                  <p className="font-base font-caslon font-gray md:w-[55%]">
+                  <p className="text-2xl font-caslon font-gray md:w-[82%]">
                     {localization.dummyText2}
                   </p>
                 </div>
@@ -66,7 +66,7 @@ export default function Home() {
 
             </div>
           </div>
-          <div className="col-span-10 md:col-span-4">
+          <div className="col-span-10 md:col-span-4 mt-10">
             <Image
               src={surgicalAsthetic1}
               alt="surgicalAsthetic1"
@@ -83,11 +83,11 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="grid grid-cols-12 justify-center mt-20"
+      <div className="grid grid-cols-12 justify-center mt-32"
         style={{
           background: 'linear-gradient(327.72deg, #FFFFFF 43.95%, #A9A9A9 141.81%)'
         }}>
-        <div className="enhencementDiv col-span-12 p-6 py-32 mt-20 flex flex-col items-center justify-center text-center h-[auto]">
+        <div className="enhencementDiv col-span-12 p-6 pt-24 pb-36 flex flex-col items-center justify-center text-center h-[auto]">
           <h4 className="text-3xl md:text-6xl font-normal font-caslon text-[#2C2C2C] mb-6 md:w-[50%]">
             {localization.transformativeEnhancement}
           </h4>

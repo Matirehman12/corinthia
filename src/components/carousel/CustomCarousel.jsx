@@ -53,7 +53,7 @@ export default function CustomCarousel() {
           alt={`Image ${index + 1}`}
           height={500}
           width={300}
-          className="h-[500px] w-full object-cover rounded-[10px]"
+          className="h-[550px] w-full object-cover rounded-[10px]"
           loading="lazy"
         // style={{ height: '300px' }}
         />

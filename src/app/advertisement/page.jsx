@@ -8,6 +8,7 @@ import cosmetic4 from '../../images/cosmetic4.svg'
 
 import LogoSection from "@/components/logosection/LogoSection";
 import Footer from "@/components/footer/Footer";
+import { localization } from "@/localization";
 
 
 
@@ -15,12 +16,16 @@ export default function Advertisement() {
     return (
         <>
             <div className="container mx-auto">
-                <div className="grid grid-cols-1">
-                    <Image
-                        src={advertisement}
-                        alt="advertisement"
-                    />
+                <div className="grid grid-cols-1 relative">
+                    <div className="text-center flex items-center justify-between">
+                        <h1 className="font-caslon font-normal text-2xl md:text-6xl text-white absolute w-full uppercase">{localization.Advertisement.hereBeautyBodyAndMindAlign}</h1>
+                        <Image
+                            src={advertisement}
+                            alt="advertisement"
+                        />
+                    </div>
                 </div>
+
             </div>
 
             <div className="grid grid-cols-1 mt-20">
@@ -30,14 +35,15 @@ export default function Advertisement() {
                 />
             </div>
 
-            <div className="grid grid-col-1 text-center items-center mt-20">
-                <h1 className="text-4xl font-caslon">BEST SELLING</h1>
-                <h1 className="text-4xl font-caslon">TREATMENTS</h1>
-                <p className="text-large  items-center font-caslon">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea consequat. </p>
-
-
-
-            </div>
+            <div className="grid grid-cols-12 justify-center items-center mt-20">
+                <div className="md:col-span-3"></div>
+                <div className="col-span-12 md:col-span-6 text-center">
+                    <h1 className="text-2xl md:text-6xl font-caslon">{localization.Advertisement.bestSelling}</h1>
+                    <h1 className="text-2xl md:text-6xl font-caslon">{localization.Advertisement.treatment}</h1>
+                    <p className="text-large  items-center font-caslon">{localization.Advertisement.dummyText5}</p>
+                </div>
+                <div className="md:col-span-3"></div>
+            </div >
 
             <div className="grid grid-cols-4 mt-10">
                 <Image
