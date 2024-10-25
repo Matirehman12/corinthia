@@ -16,7 +16,14 @@ import { localization } from '@/localization';
 import Image from "next/image";
 import bottomLines from '@/images/bottomLines.svg';
 import treatment1TopLines from '@/images/treatment1TopLines.svg';
+import { useState } from 'react';
 export default function Treatment2() {
+
+    const [openAccordionId, setOpenAccordionId] = useState(null);
+
+    const toggleAccordion = (id) => {
+      setOpenAccordionId(prevId => (prevId === id ? null : id));
+    };
 
     return (
 
@@ -30,7 +37,7 @@ export default function Treatment2() {
                                 alt="surgicalAsthetic3"
                                 width={512}
                                 height={1138}
-                                className='ml-20'
+                                className='ml-20 rounded-none'
                             />
                         </div>
                         <div className="textContainer ">
@@ -75,30 +82,46 @@ export default function Treatment2() {
                 <Accordian
                     accordianHeader={"IS THIS TREATMENT SUITABLE FOR ME?"}
                     accordianBodyText={"We believe health and wellbeing should be balanced in order to achieve optimal beauty. Treatments are seen as ‘a journey to a new you’ and we support all clients with bespoke treatment plans to ensure you see the best results. Emphasis is placed on subtle balancing, restoring, and enhancing your natural beauty, to ensure you feel empowered to become the best version of you."}
+                    accordianId={"1"}
+                    isOpen={openAccordionId === "1"}
+                    onToggle={() => toggleAccordion("1")}
                 />
             </div>
             <div className='mt-20 mb-20'>
                 <Accordian
                     accordianHeader={"WHAT RESULT CAN I EXPECT?"}
                     accordianBodyText={"We believe health and wellbeing should be balanced in order to achieve optimal beauty. Treatments are seen as ‘a journey to a new you’ and we support all clients with bespoke treatment plans to ensure you see the best results. Emphasis is placed on subtle balancing, restoring, and enhancing your natural beauty, to ensure you feel empowered to become the best version of you."}
+                    accordianId={"2"}
+                    isOpen={openAccordionId === "2"}
+                    onToggle={() => toggleAccordion("2")}
                 />
             </div>
             <div className='mt-20 mb-20'>
                 <Accordian
                     accordianHeader={"ARE THERE ANY RISKS?"}
                     accordianBodyText={"We believe health and wellbeing should be balanced in order to achieve optimal beauty. Treatments are seen as ‘a journey to a new you’ and we support all clients with bespoke treatment plans to ensure you see the best results. Emphasis is placed on subtle balancing, restoring, and enhancing your natural beauty, to ensure you feel empowered to become the best version of you."}
+                    accordianId={"3"}
+                    isOpen={openAccordionId === "3"}
+                    onToggle={() => toggleAccordion("3")}
                 />
             </div>
             <div className='mt-20 mb-20'>
                 <Accordian
                     accordianHeader={"WHAT ABOUT AFTERCARE?"}
                     accordianBodyText={"We believe health and wellbeing should be balanced in order to achieve optimal beauty. Treatments are seen as ‘a journey to a new you’ and we support all clients with bespoke treatment plans to ensure you see the best results. Emphasis is placed on subtle balancing, restoring, and enhancing your natural beauty, to ensure you feel empowered to become the best version of you."}
+                    accordianId={"4"}
+                    isOpen={openAccordionId === "4"}
+                    onToggle={() => toggleAccordion("4")}
                 />
+
             </div>
             <div className='mt-20 mb-20'>
                 <Accordian
                     accordianHeader={"WHAT CAN I EXPECT ON THIS DAY?"}
                     accordianBodyText={"We believe health and wellbeing should be balanced in order to achieve optimal beauty. Treatments are seen as ‘a journey to a new you’ and we support all clients with bespoke treatment plans to ensure you see the best results. Emphasis is placed on subtle balancing, restoring, and enhancing your natural beauty, to ensure you feel empowered to become the best version of you."}
+                    accordianId={"5"}
+                    isOpen={openAccordionId === "5"}
+                    onToggle={() => toggleAccordion("5")}
                 />
             </div>
 

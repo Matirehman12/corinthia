@@ -18,6 +18,8 @@ module.exports = {
         bgDarkGray: '#F7F7F7',
         btnGolden: ' #BB975B',
         darkGray: '#E9E6DF',
+      
+
 
 
       },
