@@ -26,8 +26,6 @@ function Accordion({ accordianHeader, accordianBodyText }) {
                 aria-controls="accordion-collapse-body"
               >
                 <span className="text-2xl font-caslon text-center flex flex-col justify-center items-center w-full pt-7">{accordianHeader}</span>
-
-
               </button>
               {isOpen === false &&
                 <div className="flex justify-center items-center">
