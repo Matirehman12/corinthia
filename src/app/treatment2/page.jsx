@@ -1,27 +1,21 @@
 "use client";
-
-import surgicalAsthetic3 from '../../images/surgicalAsthetic3.svg';
-import containerImg5 from '../../images/containerImg5.svg';
-import testemonialsImg from '../../images/testemonialsImg.svg';
+import Accordian from '@/components/accordian/Accordian';
+import LogoSection from '@/components/logosection/LogoSection';
 import after from '../../images/after.svg';
 import after1 from '../../images/after1.svg';
 import containerImg from '../../images/containerImg.svg';
+import containerImg5 from '../../images/containerImg5.svg';
 import relatedImg1 from '../../images/relatedImg1.svg';
 import relatedImg2 from '../../images/relatedImg2.svg';
-import LogoSection from '@/components/logosection/LogoSection';
-import Accordian from '@/components/accordian/Accordian';
-
+import surgicalAsthetic3 from '../../images/surgicalAsthetic3.svg';
+import testemonialsImg from '../../images/testemonialsImg.svg';
 import arrowIcon from '../../images/arrowIcon.svg';
-
-import Image from "next/image";
-import NewsLetter from '@/components/newsletter/NewsLetter';
 import Footer from '@/components/footer/Footer';
+import NewsLetter from '@/components/newsletter/NewsLetter';
 import { localization } from '@/localization';
-
-import bottomLines from '@/images/bottomLines.svg'
-
-import treatment1TopLines from '@/images/treatment1TopLines.svg'
-
+import Image from "next/image";
+import bottomLines from '@/images/bottomLines.svg';
+import treatment1TopLines from '@/images/treatment1TopLines.svg';
 export default function Treatment2() {
 
     return (

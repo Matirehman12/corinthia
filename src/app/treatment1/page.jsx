@@ -1,16 +1,13 @@
-import surgicalAsthetic1 from '../../images/surgicalAsthetic1.svg'
-import surgicalAsthetic2 from '../../images/surgicalAsthetic2.svg'
-import surgicalAsthetic3 from '../../images/surgicalAsthetic3.svg'
-import Image from "next/image";
-import bgImage from '../../images/treatment1header.svg'
 import ReactMultiCarousel from "@/components/carousel/ReactMultiCarousel";
-import treatment1Img from '../../images/treatment1Img.svg'
 import Footer from '@/components/footer/Footer';
 import { localization } from '@/localization';
-import topLines from '@/images/topLines.svg'
-import bottomLines from '@/images/bottomLines.svg'
-
-import treatment1TopLines from '@/images/treatment1TopLines.svg'
+import Image from "next/image";
+import surgicalAsthetic1 from '../../images/surgicalAsthetic1.svg';
+import surgicalAsthetic2 from '../../images/surgicalAsthetic2.svg';
+import surgicalAsthetic3 from '../../images/surgicalAsthetic3.svg';
+import bgImage from '../../images/treatment1header.svg';
+import treatment1Img from '../../images/treatment1Img.svg';
+import treatment1TopLines from '@/images/treatment1TopLines.svg';
 
 export default function Treatment1() {
     return (
