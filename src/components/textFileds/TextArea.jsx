@@ -3,7 +3,7 @@ import React from 'react'
 const TextArea = ({ label, required, className, rows, cols }) => {
     return (
         <div>
-            <label className='font-caslon font-normal text-base leading-4'>{label}
+            <label className='font-caslon font-normal text-base text-gray leading-4'>{label}
                 {required && <span className='text-yellowGradient'> *</span>}
             </label>
             <textarea

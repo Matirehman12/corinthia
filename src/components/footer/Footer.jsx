@@ -57,18 +57,18 @@ const Footer = () => {
 
                         </div>
                         {/* </div> */}
-                        <div className='md:flex items-center xl:gap-10 py-5 mt-16'>
+                        <div className='md:flex items-center xl:gap-10 py-5 md:mt-16'>
                             <Image
                                 src={Logo}
                                 alt="brand logo"
                                 width={250}
                                 priority
-                                className='h-[69px] w-[250px]'
+                                className='h-[150px] md:h-[69px] w-[350px] md:w-[250px]'
                             />
                             <p className='font-normal font-caslon text-base text-gray'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
 
-                        <div className="sm:flex sm:items-center sm:justify-between mt-32">
+                        <div className="flex md:items-center md:justify-between gap-5 flex-col-reverse md:flex-row mt-32 ">
                             <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400 font-caslon">© 2024   <a href="https://flowbite.com/" className="hover:underline text-yellowGradient">Corinthia Clinic</a>. All Rights Reserved.
                             </span>
                             <div className='flex items-center gap-3'>
@@ -76,7 +76,7 @@ const Footer = () => {
                                 <h4 className='font-semibold text-base'>Powered By Managed</h4>
                             </div>
                             <div className="flex mt-4 gap-4 sm:justify-center sm:mt-0 text-slate-400 font-caslon font-normal">
-                                <p className='font-normal font-caslon font-base text-[#484848]'>Terms of use</p> | <p className='font-normal font-caslon font-base text-[#484848]'>Privacy policy</p>
+                                <a href='#' className='font-normal font-caslon font-base text-[#484848]'>Terms of use</a> | <a href='#' className='font-normal font-caslon font-base text-[#484848]'>Privacy policy</a>
                             </div>
                         </div>
                     </div>

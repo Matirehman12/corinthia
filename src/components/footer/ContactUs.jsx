@@ -46,45 +46,46 @@ const ContactUs = () => {
                 </div>
                 <div className="xl:col-span-4 lg:col-span-4 md:col-span-10 col-span-12 md:mt-0 mt-5">
                     <div className='border border-[#D9D9D9]  p-10  relative xl:right-[243px] lg:top-[100px] xl:w-full lg:right-20 lg:w-[400px] md:right-[-60px] md:top-[-100px]  bg-white rounded-[12px]'>
-                        <div className='grid md:grid-cols-2 grid-cols-1 gap-5'>
-                            <TextField
-                                label={localization.firstName}
-                                required
-                            />
-                            <TextField
-                                label={localization.lastName}
-                                required
-                            />
-                            <TextField
-                                type='number'
-                                label={localization.phoneNumber}
-                                required
-                            />
-                            <TextField
-                                type='email'
-                                label={localization.emailAddress}
-                                required
-                            />
-                            <TextField
-                                label={localization.country}
-                                required
-                            />
-                            <TextField
-                                label={localization.address}
-                                required
-                            />
-                        </div>
-                        <div className='grid col-1 mt-5'>
-                            <TextArea
-                                label={localization.message}
-                                required
-                            />
+                        <form>
+                            <div className='grid md:grid-cols-2 grid-cols-1 gap-5'>
+                                <TextField
+                                    label={localization.firstName}
+                                    required
+                                />
+                                <TextField
+                                    label={localization.lastName}
+                                    required
+                                />
+                                <TextField
+                                    type='number'
+                                    label={localization.phoneNumber}
+                                    required
+                                />
+                                <TextField
+                                    type='email'
+                                    label={localization.emailAddress}
+                                    required
+                                />
+                                <TextField
+                                    label={localization.country}
+                                    required
+                                />
+                                <TextField
+                                    label={localization.address}
+                                    required
+                                />
+                            </div>
+                            <div className='grid col-1 mt-5'>
+                                <TextArea
+                                    label={localization.message}
+                                    required
+                                />
 
-                            <button className='bg-yellowGradient h-[60px] font-caslon font-normal text-lg leading-5 mt-5 uppercase pt-2'>
-                                Send Message
-                            </button>
-                        </div>
-
+                                <button className='bg-yellowGradient h-[60px] font-caslon font-normal text-lg leading-5 mt-5 uppercase pt-2'>
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

@@ -28,7 +28,9 @@ body {
     text-wrap: balance;
   }
 }
-
+body{
+  background: #ffffff;
+}
 
 .bg-customGradient {
   background: linear-gradient(38deg, rgb(255, 255, 255) 50%, rgba(169, 169, 169, 0.5));

@@ -98,6 +98,8 @@ export const localization = {
         lookGoodFeelGood:"LOOK GOOD & FEEL GOOD",
         weRealiseTheWay:"We realise the way that we look greatly affects our self-  confidence and body image perception. Feeling dissatisfied with our features, body, or skin can lead to depression, insecurity and withdrawal from certain situations and relationships. Often, aesthetic treatments can have a great impact on our psychological wellbeing and body confidence.",
         yourContant:"YOUR CONSULTANT",
+        your:"your",
+        consultant:"CONSULTANT",
         clientsStartWithAMedicalLifestyle:"clients start with a medical lifestyle consultation virtually or in clinic. Your detailed medical and aesthetic history will be discussed, including your goals and desires. You can expect to have a face and skin analysis, these unique assessments will confirm which treatments are most suitable for you. We will discuss realistic outcomes and expectations from each treatment, as well as any lifestyle changes that may be suitable including referrals to our in-house team.",
         book:"BOOK",
         togetherBespoke :"Together a bespoke treatment plan will be devised to ensure you feel empowered to become the best version of you.",

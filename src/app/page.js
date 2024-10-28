@@ -33,12 +33,12 @@ export default function Home() {
             className="w-full"
           />
         </div>
-        <div className="grid grid-cols-12 gap-10 xl:px-20 bottom-lines relative z-10">
-          <div className="col-span-10 md:col-span-8">
-            <div className="grid grid-cols-12 gap-10 mt-10">
-              <div className="col-span-10 lg:ps-40 md:ps-20">
+        <div className="md:grid md:grid-cols-12 gap-10 xl:px-20 bottom-lines relative z-10 m-5 md:m-0">
+          <div className="col-span-12 md:col-span-8">
+            <div className="md:grid md:grid-cols-12 gap-10 mt-10">
+              <div className="col-span-12 md:col-span-10 lg:ps-40 md:ps-20">
                 <div className="surgical-asthetic mx-3">
-                  <h4 className="text-4xl md:text-6xl mb-4 font-caslon font-normal mt-[100px] md:w-[75%] uppercase">
+                  <h4 className="text-4xl md:text-6xl mb-4 font-caslon font-normal mt-[100px] md:w-[75%] uppercase text-lightBlack2c">
                     {localization.awardWinningNonSurgical}
                   </h4>
                   <p className="text-2xl font-caslon text-gray xl:w-[75%]  font-gray md:w-[82%]">
@@ -47,30 +47,29 @@ export default function Home() {
                 </div>
 
               </div>
-              {/* <div className="col-span-8"></div> */}
-              <div className="col-span-10 md:col-span-6">
+              <div className="col-span-12 md:col-span-6">
                 <Image
                   src={surgicalAsthetic3}
                   alt="surgicalAsthetic3"
-                  className="md:mt-[400px] w-full mx-3 sticky top-0 z-20"
+                  className="md:mt-[400px] w-full sticky top-0 z-20"
                 />
               </div>
-              <div className="col-span-10 md:col-span-6">
+              <div className="col-span-12 md:col-span-6">
                 <Image
                   src={surgicalAsthetic2}
                   alt="surgicalAsthetic2"
-                  className="w-full mx-3 sticky top-0 z-20"
+                  className="w-full sticky top-0 z-20 mt-10 md:mt-0"
                 />
 
               </div>
 
             </div>
           </div>
-          <div className="col-span-10 md:col-span-4 mt-10">
+          <div className="col-span-12 md:col-span-4 mt-10">
             <Image
               src={surgicalAsthetic1}
               alt="surgicalAsthetic1"
-              className="md:mt-[80px] w-full mx-3 sticky top-0 z-20"
+              className="md:mt-[80px] w-full sticky top-0 z-20"
             />
           </div>
         </div>
@@ -106,7 +105,7 @@ export default function Home() {
       <div className="grid grid-cols-1 ps-3">
         <CustomCarousel />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-40 mx-20">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-40 mx-5 md:mx-20">
         <div className="image-container">
           <Image
             src={surgicalAsthetic3}
@@ -130,9 +129,11 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:relative lg:top-[-340px]">
+
+      {/* lg:top-[-340px] */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:relative ">
         <div className="leftDiv mx-10 lg:mx-20 mt-20 z-40">
-          <h4 className="mb-5 text-3xl md:text-6xl font-caslon">{localization.trustedSkinExpertise}</h4>
+          <h4 className="mb-5 text-3xl md:text-6xl font-caslon text-lightBlack2c">{localization.trustedSkinExpertise}</h4>
           <p className="text-2xl font-caslon text-gray lg:w-[80%]">{localization.dummyText4} </p>
         </div>
         <div className="relative right-[50px]">
@@ -142,7 +143,9 @@ export default function Home() {
           />
         </div>
       </div>
-      <div className="relative lg:top-[-340px]">
+
+      {/* lg:top-[-340px] */}
+      <div className="relative">
         <div className="absolute lg:top-[-100px]">
           <Footer />
         </div>

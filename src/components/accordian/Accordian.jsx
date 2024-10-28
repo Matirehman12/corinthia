@@ -4,13 +4,13 @@ import Image from "next/image";
 function Accordion({ accordianHeader, accordianBodyText, accordianId, isOpen, onToggle }) {
   return (
     <div className="container mx-auto">
-      <div className="grid grid-cols-1">
-        <div className="border border-gray-200">
+      <div className="grid grid-cols-1 mx-5">
+        <div className="border border-black">
           <h2 id={`accordion-collapse-heading-${accordianId}`}>
             <button
               type="button"
-              className={`flex items-center rounded-none justify-between w-full p-5 font-medium text-gray-500 pb-0
-                ${isOpen ? 'border-b-0 bg-transparent' : ' border-gray-200 hover:bg-gray-100'}
+              className={`flex items-center rounded-none justify-between w-full p-5 font-medium text-gray-500 pb-0 text-black
+                ${isOpen ? 'border-b-0 bg-transparent' : ' border-black-200 hover:bg-gray-100'}
               `}
               onClick={onToggle}
               aria-expanded={isOpen}
@@ -38,7 +38,7 @@ function Accordion({ accordianHeader, accordianBodyText, accordianId, isOpen, on
             aria-labelledby={`accordion-collapse-heading-${accordianId}`}
           >
             <div className="p-5 text-center items-center">
-              <p className="text-lg font-normal font-caslon w-[67%] mx-auto items-center text-center">
+              <p className="text-lg font-normal font-caslon w-[67%] mx-auto items-center text-center text-black">
                 {accordianBodyText}
               </p>
               {isOpen && (

@@ -38,9 +38,9 @@ export default function Advertisement() {
             <div className="grid grid-cols-12 justify-center items-center mt-20">
                 <div className="md:col-span-3"></div>
                 <div className="col-span-12 md:col-span-6 text-center">
-                    <h1 className="text-2xl md:text-6xl font-caslon">{localization.Advertisement.bestSelling}</h1>
-                    <h1 className="text-2xl md:text-6xl font-caslon">{localization.Advertisement.treatment}</h1>
-                    <p className="text-large  items-center font-caslon">{localization.Advertisement.dummyText5}</p>
+                    <h1 className="text-2xl md:text-6xl font-caslon text-black">{localization.Advertisement.bestSelling}</h1>
+                    <h1 className="text-2xl md:text-6xl font-caslon text-black">{localization.Advertisement.treatment}</h1>
+                    <p className="text-large  items-center font-caslon text-black">{localization.Advertisement.dummyText5}</p>
                 </div>
                 <div className="md:col-span-3"></div>
             </div >

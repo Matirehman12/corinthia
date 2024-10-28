@@ -30,40 +30,40 @@ export default function Treatment2() {
         <>
             <div className='relative'>
                 <div className="container mx-auto mt-20 ">
-                    <div className="grid grid-cols-2 gap-10">
+                    <div className="grid md:grid-cols-2 gap-10 mx-5 md:mx-0">
                         <div className="imgContainer">
                             <Image
                                 src={surgicalAsthetic3}
                                 alt="surgicalAsthetic3"
                                 width={512}
                                 height={1138}
-                                className='ml-20 rounded-none'
+                                className='md:ml-20 rounded-none'
                             />
                         </div>
                         <div className="textContainer ">
                             <div className="hrDiv flex">
-                                <h1 className='text-4xl font-caslon font-normal w-1/2'>{localization.treatment2.antiWrinkleInjection}</h1>
-                                <div className="border-l-2 border-gray-300  ml-10 h-[170px] z-50"></div>
+                                <h1 className='text-4xl font-caslon font-normal w-1/2 text-lightBlack2c'>{localization.treatment2.antiWrinkleInjection}</h1>
+                                <div className="border-l-2 border-gray-300  ml-10 h-[170px] z-50 text-lightBlack2c"></div>
 
-                                <span className='mt-8 font-normal text-1xl ml-10 font-caslon'>{localization.treatment2.atAglace}</span>
+                                <span className='mt-8 font-normal text-1xl ml-10 font-caslon text-lightBlack2c'>{localization.treatment2.atAglace}</span>
                             </div>
-                            <div className="textDiv bg-customGold mr-40 pt-10 pb-10">
-                                <p className='text-large font-base text-white mx-20 font-caslon  mb-5'>
+                            <div className="textDiv bg-customGold lg:mr-20 xl:mr-40 pt-10 pb-10">
+                                <p className='text-large font-base text-white mx-10 lg:mx-20 font-caslon  mb-5'>
                                     {localization.treatment2.refreshYourLook}
                                 </p>
                                 <p className=' mb-5 text-white text-1xl ml-20 font-caslon'>Treatment areas include :</p>
-                                <ul className="list-disc list-inside font-caslon mx-20 mb-5 text-white text-1xl">
+                                <ul className="list-disc list-inside font-caslon mx-10 lg:mx-20 mb-5 text-white text-1xl">
                                     {localization.treatment2.treatmentAreas.map((area, index) => (
                                         <li key={index}>{area}</li>
                                     ))}
                                 </ul>
-                                <p className="mt-4 text-1xl font-normal mx-20 mb-5 font-caslon text-white">
+                                <p className="mt-4 text-1xl font-normal mx-10 lg:mx-20 mb-5 font-caslon text-white">
                                     {localization.treatment2.reliableTreatmentText1}
                                 </p>
-                                <p className="mt-4 text-1xl font-normal mx-20 mb-5 font-caslon text-white">
+                                <p className="mt-4 text-1xl font-normal mx-10 lg:mx-20 mb-5 font-caslon text-white">
                                     {localization.treatment2.reliableTreatmentText2}
                                 </p>
-                                <p className="mt-4 text-1xl font-normal mx-20 mb-5 font-caslon text-white">
+                                <p className="mt-4 text-1xl font-normal mx-10 lg:mx-20 mb-5 font-caslon text-white">
                                     {localization.treatment2.reliableTreatmentText3}
                                 </p>
                             </div>
@@ -76,7 +76,7 @@ export default function Treatment2() {
 
 
             <div className="grid grid-cols-1 mt-44">
-                <h1 className="text-4xl text-center font-caslon mb-4">FAQ</h1>
+                <h1 className="text-4xl text-center font-caslon mb-4 text-lightBlack2c">FAQ</h1>
             </div>
             <div className='mt-10 mb-20'>
                 <Accordian
@@ -126,11 +126,11 @@ export default function Treatment2() {
             </div>
 
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-60  bg-lightGray p-8 py-16 mr-60 relative">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:gap-60  bg-lightGray p-8 py-16  xl:mr-60 relative">
 
-                <div className="flex flex-col items-start ml-[115px] ">
-                    <h1 className="text-4xl font-caslon font-bold mb-4">{localization.treatment2.testimonials}</h1>
-                    <p className="text-lg text-gray-700 font-caslon mb-6 w-1/3">
+                <div className="flex flex-col items-start lg:ml-[115px] ">
+                    <h1 className="text-4xl font-caslon font-bold mb-4 text-black">{localization.treatment2.testimonials}</h1>
+                    <p className="text-lg text-gray-700 font-caslon text-black mb-6 md:w-2/3 lg:w-full  xl:w-3/4 2xl:w-1/3">
                         {localization.treatment2.weValueFeedback}
                     </p>
                     <div>
@@ -139,7 +139,7 @@ export default function Treatment2() {
                             alt="Client Image"
                             width={338}
                             height={339}
-                            className="mb-4  h-[420px] absolute"
+                            className="mb-4  h-[420px] md:absolute"
                         />
                     </div>
                 </div>
@@ -151,16 +151,16 @@ export default function Treatment2() {
                             src={testemonialsImg}
                             width={177}
                             height={163}
-                            className='absolute -left-28 -top-3'
+                            className='absolute left-0 md:-left-28 -top-20 md:-top-3'
                             alt="testemonialsImg"
                         />
                     </div>
 
-                    <div className='w-[70%] bg-white p-8 py-20 mt-5'>
-                        <p className="text-lg italic font-caslon mx-8 mb-4">
+                    <div className='xl:w-[90%] 2xl:w-[70%] bg-white p-5 lg:p-8  lg:py-20 mt-5'>
+                        <p className="text-lg italic font-caslon lg:mx-8 mb-4 text-black">
                             {localization.treatment2.teamAreTheMostProfessional}
                         </p>
-                        <p className="text-lg font-semibold font-caslon text-right">{localization.treatment2.sarah}</p>
+                        <p className="text-lg font-semibold font-caslon text-right text-black">{localization.treatment2.sarah}</p>
                     </div>
                 </div>
             </div>
@@ -168,11 +168,11 @@ export default function Treatment2() {
             <div className="container mx-auto mt-[300px]">
                 <div className="grid grid-cols-1 mt-20">
                     <div className="text-center mb-10">
-                        <h1 className="text-4xl font-semibold">{localization.treatment2.seeTheResult}</h1>
+                        <h1 className="text-4xl font-normal font-caslon text-black">{localization.treatment2.seeTheResult}</h1>
                         <hr className="w-24 mx-auto mt-4 border-black border-t-2" />
                     </div>
 
-                    <div className="grid grid-cols-5 mx-40">
+                    <div className="grid grid-cols-1 md:grid-cols-5 lg:mx-12 xl:mx-40">
                         <div>
                             <Image
                                 src={after}
@@ -180,41 +180,41 @@ export default function Treatment2() {
                                 height={282}
                                 className="shadow-md w-full"
                             />
-                            <p className="text-center font-caslon font-normal text-base mt-3">{localization.treatment2.before}</p>
+                            <p className="text-center font-caslon font-normal text-base mt-3 text-black">{localization.treatment2.before}</p>
                         </div>
-                        <div className='mt-14'>
+                        <div className='mt-10 md:mt-14'>
                             <Image
                                 src={after}
                                 alt="After Image 1"
                                 height={282}
                                 className="shadow-md w-full"
                             />
-                            <p className="text-center font-caslon font-normal text-base mt-3">{localization.treatment2.after}</p>
+                            <p className="text-center font-caslon font-normal text-base mt-3 text-black">{localization.treatment2.after}</p>
                         </div>
 
                         <div className="text-center font-caslon font-normal text-base mt-20 p-4">
-                            <p className="text-1xl text-gray-600 w-11/12">
+                            <p className="text-1xl text-gray-600 w-11/12 text-black">
                                 {localization.treatment2.proudOfResult}
                             </p>
                         </div>
-                        <div className='mt-28'>
+                        <div className='mt-10 md:mt-28'>
                             <Image
                                 src={after1}
                                 alt="Before Image 2"
                                 height={282}
                                 className="shadow-md w-full"
                             />
-                            <p className="text-center font-caslon font-normal text-base mt-3">{localization.treatment2.before}</p>
+                            <p className="text-center font-caslon font-normal text-base mt-3 text-black">{localization.treatment2.before}</p>
 
                         </div>
-                        <div className='mt-44'>
+                        <div className='mt-10 md:mt-44'>
                             <Image
                                 src={after1}
                                 alt="After Image 2"
                                 height={282}
                                 className="shadow-md w-full"
                             />
-                            <p className="text-center font-caslon font-normal text-base mt-3">{localization.treatment2.after}</p>
+                            <p className="text-center font-caslon font-normal text-base mt-3 text-black">{localization.treatment2.after}</p>
                         </div>
                     </div>
                 </div>
@@ -229,9 +229,9 @@ export default function Treatment2() {
                 />
             </div>
 
-            <div className="grid grid-cols-2 items-center gap-10 relative">
+            <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-5 xl:gap-10 relative">
                 <div>
-                    <h1 className='text-4xl font-caslon text-center  mt-20 mb-16'>{localization.treatment2.relatedTreatment}</h1>
+                    <h1 className='text-4xl font-caslon text-center  mt-20 mb-16 text-black'>{localization.treatment2.relatedTreatment}</h1>
                     <div className="grid grid-cols-12">
                         <div className="col-span-6">
                             <Image
@@ -253,48 +253,48 @@ export default function Treatment2() {
                     </div>
                 </div>
                 <div>
-                    <div className='grid grid-cols-12  mt-20 px-16'>
+                    <div className='lg:grid lg:grid-cols-12  mt-20 xl:px-16 px-5'>
                         <div className="col-span-12">
-                            <h1 className="text-4xl font-caslon mb-20 w-1/2">{localization.treatment2.relatedConditions}</h1>
+                            <h1 className="text-4xl font-caslon mb-10 xl:mb-20 w-1/2 text-black">{localization.treatment2.relatedConditions}</h1>
                         </div>
 
-                        <div className="col-span-6">
-                            <div className='w-[70%]'>
-                                <div className="flex justify-between items-center mb-10">
-                                    <p className='font-caslon font-normal text-2xl text-black'>{localization.treatment2.excessiveSweating}</p>
+                        <div className="col-span-12 lg:col-span-6">
+                            <div className='xl:w-[70%]'>
+                                <a href='#' className="flex justify-between items-center mb-10">
+                                    <p className='font-caslon font-normal text-lg xltext-2xl text-black'>{localization.treatment2.excessiveSweating}</p>
                                     <Image src={arrowIcon}
                                         alt='arrowIcon'
                                         className='h-[50px]'
                                     />
-                                </div>
-                                <div className="flex justify-between items-center mb-10">
-                                    <p className='font-caslon font-normal text-2xl text-black w-3/4'>{localization.treatment2.tiredEyesEyebagsDarkCircles}</p>
+                                </a>
+                                <a href='#' className="flex justify-between items-center mb-10">
+                                    <p className='font-caslon font-normal text-lg xltext-2xl text-black w-3/4'>{localization.treatment2.tiredEyesEyebagsDarkCircles}</p>
                                     <Image src={arrowIcon}
                                         alt='arrowIcon'
                                     />
-                                </div>
-                                <div className="flex justify-between items-center mb-10">
-                                    <p className='font-caslon font-normal text-2xl text-black '>{localization.treatment2.antiAgeing}</p>
+                                </a>
+                                <a href='#' className="flex justify-between items-center mb-10">
+                                    <p className='font-caslon font-normal text-lg xltext-2xl text-black '>{localization.treatment2.antiAgeing}</p>
                                     <Image src={arrowIcon}
                                         alt='arrowIcon'
                                     />
-                                </div>
+                                </a>
                             </div>
                         </div>
-                        <div className="col-span-6">
-                            <div className='w-[70%]'>
-                                <div className="flex justify-between items-center mb-10">
-                                    <p className='font-caslon font-normal text-2xl text-black w-3/4'>{localization.treatment2.teethGrindlingJawLineSlimming}</p>
+                        <div className="col-span-12 lg:col-span-6">
+                            <div className='xl:w-[70%]'>
+                                <a href='#' className="flex justify-between items-center mb-10">
+                                    <p className='font-caslon font-normal text-lg xltext-2xl text-black w-3/4'>{localization.treatment2.teethGrindlingJawLineSlimming}</p>
                                     <Image src={arrowIcon}
                                         alt='arrowIcon'
                                     />
-                                </div>
-                                <div className="flex justify-between items-center mb-10">
-                                    <p className='font-caslon font-normal text-2xl text-black w-3/4'>{localization.treatment2.thinLipUnevenLipsLipLines}</p>
+                                </a>
+                                <a href='#' className="flex justify-between items-center mb-10">
+                                    <p className='font-caslon font-normal text-lg xltext-2xl text-black w-3/4'>{localization.treatment2.thinLipUnevenLipsLipLines}</p>
                                     <Image src={arrowIcon}
                                         alt='arrowIcon'
                                     />
-                                </div>
+                                </a>
                             </div>
                         </div>
                         <div className="col-span-10 mt-10">

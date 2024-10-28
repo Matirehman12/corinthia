@@ -28,12 +28,12 @@ export default function Information() {
                         />
                     </div>
                     <div className="img-content flex flex-col xl:ml-20 mt-20">
-                        <h1 className="text-5xl font-normal mb-5  font-caslon">{localization.information.patient}</h1>
-                        <h1 className="text-5xl font-normal mb-5  font-caslon">{localization.information.journey}</h1>
+                        <h1 className="text-5xl font-normal mb-5  font-caslon text-black">{localization.information.patient}</h1>
+                        <h1 className="text-5xl font-normal mb-5  font-caslon text-black">{localization.information.journey}</h1>
                         <div className="flex items-start">
-                            <div className="border-l-2 border-gray-800 h-48 mr-5"></div>
+                            <div className="border-l-2 border-black h-48 mr-5"></div>
                             <div>
-                                <h4 className="text-2xl font-normal mb-2 xl:mx-20 mt-8 font-caslon">{localization.information.aJourneyToANewYou}</h4>
+                                <h4 className="text-2xl font-normal mb-2 xl:mx-20 mt-8 font-caslon text-black">{localization.information.aJourneyToANewYou}</h4>
                                 <p className="mb-5 xl:w-[72%] xl:ml-20 txet-lg font-normal text-black font-caslon">
                                     {localization.information.ourMedicalDirector}
                                 </p>
@@ -50,11 +50,11 @@ export default function Information() {
             <div className="container mx-auto mt-24">
                 <div className="lg:flex flex-row  gap-5 md:mx-20">
                     <div className="consultant-container bg-black pb-20 md:w-[490px] flex flex-col justify-between p-4">
-                        <h1 className="text-5xl mt-20 font-normal font-caslon text-white text-center">{localization.information.yourContant}</h1>
+                    <h1 className="text-[32px] mt-20 font-normal font-caslon text-white text-center uppercase md:px-20">{localization.information.yourContant}</h1>
                         <p className="text-lg text-white  font-normal font-caslon xl:mx-16">
                             <span className="text-xl">All </span>{localization.information.clientsStartWithAMedicalLifestyle}
                         </p>
-                        <button className="font-caslon font-normal px-20 mx-20  py-3 text-btnGolden border border-btnGolden mt-4">{localization.information.book}</button>
+                        <button className="font-caslon font-normal px-20 md:mx-20 pt-4 py-3 text-btnGolden border border-btnGolden mt-4">{localization.information.book}</button>
                     </div>
                     <hr class="border-t-2 font-bold border-gray-300 mt-20 lg:mt-80 w-[150px] my-4" />
                     <div className="flex flex-col items-center">
@@ -62,7 +62,7 @@ export default function Information() {
 
                         <div className="right-container  mt-20">
                             <Image src={consultantImg} className="" alt="ConsultantImg" />
-                            <p className="font-normal mx-5 xl:ml-20   font-caslon mt-10 xl:w-[48%]">
+                            <p className="font-normal mx-5 xl:ml-20   font-caslon mt-10 xl:w-[48%] text-black">
                                 {localization.information.togetherBespoke}
                             </p>
                         </div>
@@ -94,16 +94,16 @@ export default function Information() {
                     </div>
                 </div>
                 <div className="grid xl:grid-cols-2">
-                    <div className="flex items-center md:gap-20 mt-10 md:ps-44">
-                        <hr className="border-l-2 border-gray-300 h-40 w-0 ml-10" />
+                    <div className="flex items-center md:gap-20 mt-10 px-5 lg:ps-44">
+                        <hr className="border-l-2 border-gray-300 h-40 w-0 2xl:ml-10" />
                         <div className="ml-10">
-                            <h1 className="text-4xl font-caslon font-normal mb-8">{localization.information.yourTreatment}</h1>
-                            <p className="text-lg font-caslon w-[77%]">
+                            <h1 className="text-4xl font-caslon font-normal mb-8 text-black">{localization.information.yourTreatment}</h1>
+                            <p className="text-lg font-caslon 2xl:w-[77%] text-black">
                                 {localization.information.weStriveToDeliverExcellence}
                             </p>
                         </div>
                     </div>
-                    <p className="text-lg font-caslon  mx-5 md:ms-52 lg:mx-60 mt-20">
+                    <p className="text-lg font-caslon  mx-5 lg:ms-52 xl:mx-44 2xl:mx-72 mt-20 text-black">
                         {localization.information.onEnteringTheClinic}
 
                     </p>
@@ -139,8 +139,8 @@ export default function Information() {
                         <hr className="border-t-2 border-gray-300 absolute ms-[-300px] mt-20 w-[300px] my-4" />
                         <div className="md:flex justify-end">
                             <div className="bg-darkGray p-20 md:p-36  shadow-md ">
-                                <h1 className="text-2xl  font-caslon text-start	mb-4 uppercase">{localization.information.afterCare}</h1>
-                                <p className="text-lg  font-normal text-start  font-caslon mb-4">
+                                <h1 className="text-2xl  font-caslon text-start	mb-4 uppercase text-black">{localization.information.afterCare}</h1>
+                                <p className="text-lg  font-normal text-start  font-caslon mb-4 text-black">
                                     {localization.information.yourAftercareWillBeDiscussed}
                                 </p>
                                 <button className="font-caslon font-normal w-full px-20 py-3 text-white border border-btnGolden hover:bg-transparent hover:text-btnGolden transition duration-300">

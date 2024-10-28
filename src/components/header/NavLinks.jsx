@@ -16,7 +16,7 @@ const NavLinks = () => {
           <Link
             key={_id}
             href={href}
-            className={`relative -mx-3 -my-2 rounded-lg px-3 py-2 text-lg text-[#080808] font-caslon transition-colors hover:text-gray-900 uppercase ${
+            className={`relative -mx-3 -my-2 rounded-lg px-3 pt-2 lg-[14px] xl:text-lg text-[#080808] font-caslon transition-colors hover:text-gray-900 uppercase ${
               isActive ? "bg-gray-100" : ""
             }`}
             onMouseEnter={() => setHoveredIndex(_id)}
