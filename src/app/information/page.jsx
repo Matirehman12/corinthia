@@ -56,7 +56,7 @@ export default function Information() {
                         </p>
                         <button className="font-caslon font-normal px-20 md:mx-20 pt-4 py-3 text-btnGolden border border-btnGolden mt-4">{localization.information.book}</button>
                     </div>
-                    <hr class="border-t-2 font-bold border-gray-300 mt-20 lg:mt-80 w-[150px] my-4" />
+                    <hr class="border-t-2 font-bold border-gray-300 mt-20 lg:mt-80 w-[150px] my-4 hidden lg:block text-black" />
                     <div className="flex flex-col items-center">
 
 
@@ -135,7 +135,7 @@ export default function Information() {
                     </div>
 
                     {/* Right Section */}
-                    <div className="flex col-span-6 md:w-[70%] md:ms-28 mt-52">
+                    <div className="flex col-span-6 md:w-[70%] md:ms-28 mt-10 md:mt-20 lg:mt-52">
                         <hr className="border-t-2 border-gray-300 absolute ms-[-300px] mt-20 w-[300px] my-4 text-black" />
                         <div className="md:flex justify-end">
                             <div className="bg-darkGray p-20 lg:p-16 xl:p-24 2xl:p-36  shadow-md ">

@@ -34,7 +34,7 @@ function Accordion({ accordianHeader, accordianBodyText, accordianId, isOpen, on
           </h2>
           <div
             id={`accordion-collapse-body-${accordianId}`}
-            className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? "max-h-40 opacity-100" : "max-h-0 opacity-0"}`}
+            className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? "max-h-500 opacity-100" : "max-h-0 opacity-0"}`}
             aria-labelledby={`accordion-collapse-heading-${accordianId}`}
           >
             <div className="p-5 text-center items-center">
