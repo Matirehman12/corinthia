@@ -19,16 +19,15 @@ const images = [
   containerImg5,
   surgicalAsthetic2,
   surgicalAsthetic1,
-  containerImg2,
+  containerImg5,
   surgicalAsthetic1,
-  containerImg2,
+  containerImg5,
   surgicalAsthetic3,
   containerImg5,
   surgicalAsthetic2,
   surgicalAsthetic1,
-  containerImg2,
-  containerImg2,
-
+  containerImg5,
+  containerImg5,
 ];
 
 // Responsive settings for the carousel
@@ -53,22 +52,25 @@ const responsive = {
 
 export default function ReactMultiCarousel() {
   return (
-    <div className="relative overflow-hidden grid grid-cols-1">
-      <Carousel responsive={responsive} draggable={true} sliderClass="gap-3" centerMode={true}>
+    // <div className="relative overflow-hidden grid grid-cols-1">
+      <Carousel
+        responsive={responsive}
+        draggable={true}
+        sliderClass="md:gap-3"
+        // centerMode={true}  // Center mode enabled
+        infinite={true}    // Optional: Enable infinite scrolling
+      >
         {images.map((image, index) => (
-          // <div className="image-container w-full flex-shrink-0" key={index}>
           <Image
             key={index}
             src={image}
             alt={`Image ${index + 1}`}
             height={250}
-            width={233}
-            className="h-[250px]  object-cover rounded-[10px] "
-          // style={{ height: '300px' }}
+            // width={233}
+            className="h-[250px] w-full md:object-cover rounded-[10px]"
           />
-          // </div>
         ))}
       </Carousel>
-    </div>
+    // </div>
   );
 }

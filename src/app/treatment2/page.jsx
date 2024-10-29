@@ -172,7 +172,7 @@ export default function Treatment2() {
                         <hr className="w-24 mx-auto mt-4 border-black border-t-2" />
                     </div>
 
-                    <div className="grid grid-cols-1 md:grid-cols-5 lg:mx-12 xl:mx-40">
+                    <div className="grid grid-cols-1 md:grid-cols-5  2xl:mx-20">
                         <div>
                             <Image
                                 src={after}
@@ -192,8 +192,8 @@ export default function Treatment2() {
                             <p className="text-center font-caslon font-normal text-base mt-3 text-black">{localization.treatment2.after}</p>
                         </div>
 
-                        <div className="text-center font-caslon font-normal text-base mt-20 p-4">
-                            <p className="text-1xl text-gray-600 w-11/12 text-black">
+                        <div className="font-caslon font-normal text-base mt-20 p-4">
+                            <p className="text-lg text-gray-600 2xl:w-11/12 text-black font-caslon">
                                 {localization.treatment2.proudOfResult}
                             </p>
                         </div>

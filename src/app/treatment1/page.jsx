@@ -13,7 +13,7 @@ import FAQComponent from "./FAQComponent";
 import { useState } from "react";
 
 export default function Treatment1() {
-    const [openAccordionId, setOpenAccordionId] = useState(null);
+    const [openAccordionId, setOpenAccordionId] = useState("1");
 
     const toggleAccordion = (id) => {
         setOpenAccordionId(prevId => (prevId === id ? null : id));

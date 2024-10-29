@@ -41,7 +41,7 @@ export default function Home() {
                   <h4 className="text-4xl md:text-6xl mb-4 font-caslon font-normal mt-[100px] md:w-[75%] uppercase text-lightBlack2c">
                     {localization.awardWinningNonSurgical}
                   </h4>
-                  <p className="text-2xl font-caslon text-gray xl:w-[75%]  font-gray md:w-[82%]">
+                  <p className="text-lg md:text-2xl font-caslon text-gray xl:w-[75%]  font-gray md:w-[82%]">
                     {localization.dummyText2}
                   </p>
                 </div>
@@ -102,7 +102,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 ps-3">
+      <div className="grid grid-cols-1 px-3">
         <CustomCarousel />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-40 mx-5 md:mx-20">
@@ -133,8 +133,8 @@ export default function Home() {
       {/* lg:top-[-340px] */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 lg:relative ">
         <div className="leftDiv mx-10 lg:mx-20 mt-20 z-40">
-          <h4 className="mb-5 text-3xl md:text-6xl font-caslon text-lightBlack2c">{localization.trustedSkinExpertise}</h4>
-          <p className="text-2xl font-caslon text-gray lg:w-[80%]">{localization.dummyText4} </p>
+          <h4 className="mb-5 text-3xl lg:text-4xl xl:text-6xl font-caslon text-lightBlack2c">{localization.trustedSkinExpertise}</h4>
+          <p className="text-2xl font-caslon text-gray xl:w-[80%]">{localization.dummyText4} </p>
         </div>
         <div className="relative right-[50px]">
           <Image

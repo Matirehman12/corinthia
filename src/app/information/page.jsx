@@ -37,7 +37,7 @@ export default function Information() {
                                 <p className="mb-5 xl:w-[72%] xl:ml-20 txet-lg font-normal text-black font-caslon">
                                     {localization.information.ourMedicalDirector}
                                 </p>
-                                <h4 className="text-2xl font-normal mb-2 xl:mx-20 font-caslon">{localization.information.lookGoodFeelGood}</h4>
+                                <h4 className="text-2xl font-normal mb-2 xl:mx-20 font-caslon text-black">{localization.information.lookGoodFeelGood}</h4>
                                 <p className="xl:mx-20 txet-lg font-normal text-black font-caslon xl:w-[72%]">
                                     {localization.information.weRealiseTheWay}
                                 </p>
@@ -94,9 +94,9 @@ export default function Information() {
                     </div>
                 </div>
                 <div className="grid xl:grid-cols-2">
-                    <div className="flex items-center md:gap-20 mt-10 px-5 lg:ps-44">
+                    <div className="flex items-center gap-5 xl:gap-20 mt-10 px-5 lg:ps-44">
                         <hr className="border-l-2 border-gray-300 h-40 w-0 2xl:ml-10" />
-                        <div className="ml-10">
+                        <div className="xl:ml-10">
                             <h1 className="text-4xl font-caslon font-normal mb-8 text-black">{localization.information.yourTreatment}</h1>
                             <p className="text-lg font-caslon 2xl:w-[77%] text-black">
                                 {localization.information.weStriveToDeliverExcellence}
@@ -112,8 +112,8 @@ export default function Information() {
 
 
             </div>
-            <div className="container mx-auto px-4">
-                <div className="grid grid-cols-12  items-center">
+            <div className="container mx-auto md:px-4">
+                <div className="md:grid md:grid-cols-12  items-center">
                     {/* Left Section with Images */}
                     <div className="col-span-12 lg:col-span-6 gap-5 items-center relative">
                         <div className="grid grid-cols-12 gap-5">

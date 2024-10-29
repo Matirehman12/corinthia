@@ -45,7 +45,7 @@ const ContactUs = () => {
                     </div>
                 </div>
                 <div className="xl:col-span-4 lg:col-span-4 md:col-span-10 col-span-12 md:mt-0 mt-5">
-                    <div className='border border-[#D9D9D9]  p-10  relative xl:right-[243px] lg:top-[100px] xl:w-full lg:right-20 lg:w-[400px] md:right-[-60px] md:top-[-100px]  bg-white rounded-[12px]'>
+                    <div className='border border-[#D9D9D9]  p-10  relative xl:right-[155px] 2xl:right-[243px] lg:top-[100px] xl:w-full lg:right-20 lg:w-[400px] md:right-[-60px] md:top-[-100px]  bg-white rounded-[12px]'>
                         <form>
                             <div className='grid md:grid-cols-2 grid-cols-1 gap-5'>
                                 <TextField

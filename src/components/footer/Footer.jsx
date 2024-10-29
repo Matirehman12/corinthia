@@ -69,14 +69,14 @@ const Footer = () => {
                         </div>
 
                         <div className="flex md:items-center md:justify-between gap-5 flex-col-reverse md:flex-row mt-32 ">
-                            <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400 font-caslon">© 2024   <a href="https://flowbite.com/" className="hover:underline text-yellowGradient">Corinthia Clinic</a>. All Rights Reserved.
+                            <span className="text-sm text-gray sm:text-center dark:text-gray-400 font-caslon">© 2024   <a href="https://flowbite.com/" className="hover:underline text-yellowGradient">Corinthia Clinic</a>. All Rights Reserved.
                             </span>
                             <div className='flex items-center gap-3'>
                                 {svgIcons.powerddBy}
-                                <h4 className='font-semibold text-base'>Powered By Managed</h4>
+                                <h4 className='font-semibold text-base text-black'>Powered By Managed</h4>
                             </div>
                             <div className="flex mt-4 gap-4 sm:justify-center sm:mt-0 text-slate-400 font-caslon font-normal">
-                                <a href='#' className='font-normal font-caslon font-base text-[#484848]'>Terms of use</a> | <a href='#' className='font-normal font-caslon font-base text-[#484848]'>Privacy policy</a>
+                                <a href='#' className='font-normal font-caslon font-base text-gray'>Terms of use</a> | <a href='#' className='font-normal font-caslon font-base text-gray'>Privacy policy</a>
                             </div>
                         </div>
                     </div>

@@ -27,7 +27,7 @@ const FAQComponent = ({ accordianHeader, accordianBodyText, accordianId, isOpen,
             aria-labelledby={`accordion-collapse-heading-${accordianId}`}
           >
             <div className='flex justify-end'>
-              <p className="bg-bgDarkGray font-caslon text-gray text-1xl p-16 w-[50%]">
+              <p className="bg-bgDarkGray font-caslon text-gray text-1xl p-5 md:p-16  xl:w-[50%]">
                 {accordianBodyText}
               </p>
               
