@@ -51,7 +51,7 @@ export default function Home() {
                 <Image
                   src={surgicalAsthetic3}
                   alt="surgicalAsthetic3"
-                  className="md:mt-[400px] w-full sticky top-0 z-20"
+                  className="md:mt-[400px] w-full sticky top-0 z-20 mt-10"
                 />
               </div>
               <div className="col-span-12 md:col-span-6">

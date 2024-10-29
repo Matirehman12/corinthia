@@ -23,8 +23,8 @@ export default function Treatment1() {
             <div className="container mx-auto px-5 md:px-10">
                 <div className="md:grid md:grid-cols-12 gap-10 md:mt-28 relative">
                     <div className="col-span-12 lg:col-span-6 xl:col-span-5 mt-20">
-                        <h1 className="text-2xl md:text-5xl mb-10 text-lightBlack2c font-caslon  xl:w-2/3">{localization.treatment1.beautifulLipEnhancement}</h1>
-                        <p className="text-base md:text-1xl text-gray mb-10 font-caslon xl:w-1/2">{localization.dummyText3}</p>
+                        <h1 className="text-2xl md:text-5xl mb-10 text-lightBlack2c font-caslon xl:w-[80%] 2xl:w-2/3">{localization.treatment1.beautifulLipEnhancement}</h1>
+                        <p className="text-base md:text-1xl text-gray mb-10 font-caslon 2xl:w-1/2">{localization.dummyText3}</p>
                         <div className="flex  space-x-4 mt-6">
                             <button className="px-4 md:px-6 py-2 pt-[13px] bg-yellowGradient text-sm md:text-lg	 text-black font-base font-caslon rounded-lg uppercase">
                                 {localization.treatment1.bookNow}
@@ -56,7 +56,7 @@ export default function Treatment1() {
             <div className='relative'>
                 <Image src={treatment1TopLines} alt='topLines' className='absolute -top-[700px] -z-10' />
                 <div className="grid lg:grid-cols-2 gap-4 mt-40 ">
-                    <div className="leftDiv mx-10 xl:mx-20 text-1xl mt-8 xl:px-28">
+                    <div className="leftDiv mx-10 xl:mx-20 text-1xl mt-8 xl:px-12 2xl:px-28">
                         <p className="mb-4 font-caslon text-2xl font-normal text-gray">{localization.treatment1.refreshYourLook}</p>
                         <p className="mb-4 font-caslon text-2xl font-normal text-gray">{localization.treatment1.treatmentAreasInclude}:</p>
                         <ul className="list-disc ml-4 font-caslon text-xl font-normal text-gray">
