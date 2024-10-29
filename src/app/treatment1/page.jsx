@@ -102,8 +102,8 @@ export default function Treatment1() {
             <div className='mt-28 px-10 md:ps-28 relative'>
                 <Image src={treatment1TopLines} alt='topLines' className='absolute left-0 -top-[500px] w-full -z-10' />
                 <div className="grid grid-cols-1">
-                    <h1 className="text-4xl font-caslon font-noraml mb-2 text-lightBlack2c">{localization.treatment1.frequently}</h1>
-                    <h1 className="text-4xl font-caslon font-noraml mb-10 text-lightBlack2c">{localization.treatment1.askedQuestion}</h1>
+                    <h1 className="text-2xl md:text-4xl font-caslon font-noraml mb-2 text-lightBlack2c">{localization.treatment1.frequently}</h1>
+                    <h1 className="text-2xl md:text-4xl font-caslon font-noraml md:mb-10 text-lightBlack2c">{localization.treatment1.askedQuestion}</h1>
                 </div>
                 <FAQComponent
                     accordianHeader={`${localization.treatment1.isThisTreatmentSuitableForMe}?`}

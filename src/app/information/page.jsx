@@ -71,39 +71,39 @@ export default function Information() {
             </div>
             <div className="relative">
                 <div className="grid grid-cols-12 gap-5">
-                    <div className="col-span-12 lg:col-span-6 mt-24">
+                    <div className="col-span-12 lg:col-span-6 mt-10 lg:mt-24">
                         <Image
                             src={facialImg1}
                             alt="facialImg1"
-                            className="h-[660px] object-cover"
+                            className="lg:h-[660px]"
                         />
                     </div>
-                    <div className="col-span-12 md:col-span-6 lg:col-span-3 mt-24">
+                    <div className="col-span-12 md:col-span-6 lg:col-span-3 mt-10 lg:mt-24">
                         <Image
                             src={facialImg2}
                             alt="facialImg2"
-                            className="h-[660px] w-full object-cover"
+                            className="lg:h-[660px] w-full"
                         />
                     </div>
-                    <div className="col-span-12 md:col-span-6 lg:col-span-3 mt-24">
+                    <div className="col-span-12 md:col-span-6 lg:col-span-3 mt-10 lg:mt-24">
                         <Image
                             src={facialImg3}
                             alt="facialImg3"
-                            className="h-[660px] w-full object-cover"
+                            className="lg:h-[660px] w-full"
                         />
                     </div>
                 </div>
                 <div className="grid xl:grid-cols-2">
                     <div className="flex items-center gap-5 xl:gap-20 mt-10 px-5 lg:ps-44">
-                        <hr className="border-l-2 border-gray-300 h-40 w-0 2xl:ml-10" />
-                        <div className="xl:ml-10">
+                        <hr className="border-l-2 border-gray-300 h-40 w-0 2xl:ml-10 text-black" />
+                        <div className="2xl:ml-10">
                             <h1 className="text-4xl font-caslon font-normal mb-8 text-black">{localization.information.yourTreatment}</h1>
                             <p className="text-lg font-caslon 2xl:w-[77%] text-black">
                                 {localization.information.weStriveToDeliverExcellence}
                             </p>
                         </div>
                     </div>
-                    <p className="text-lg font-caslon  mx-5 lg:ms-52 xl:mx-44 2xl:mx-72 mt-20 text-black">
+                    <p className="text-lg font-caslon  mx-5  lg:ms-52 xl:mx-44 xl:ms-20 xl:ps-6 2xl:ms-24 pt-7 2xl:mx-72 lg:mt-20 text-black">
                         {localization.information.onEnteringTheClinic}
 
                     </p>
@@ -136,9 +136,9 @@ export default function Information() {
 
                     {/* Right Section */}
                     <div className="flex col-span-6 md:w-[70%] md:ms-28 mt-52">
-                        <hr className="border-t-2 border-gray-300 absolute ms-[-300px] mt-20 w-[300px] my-4" />
+                        <hr className="border-t-2 border-gray-300 absolute ms-[-300px] mt-20 w-[300px] my-4 text-black" />
                         <div className="md:flex justify-end">
-                            <div className="bg-darkGray p-20 md:p-36  shadow-md ">
+                            <div className="bg-darkGray p-20 lg:p-16 xl:p-24 2xl:p-36  shadow-md ">
                                 <h1 className="text-2xl  font-caslon text-start	mb-4 uppercase text-black">{localization.information.afterCare}</h1>
                                 <p className="text-lg  font-normal text-start  font-caslon mb-4 text-black">
                                     {localization.information.yourAftercareWillBeDiscussed}

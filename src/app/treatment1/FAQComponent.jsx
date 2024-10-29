@@ -15,7 +15,7 @@ const FAQComponent = ({ accordianHeader, accordianBodyText, accordianId, isOpen,
               aria-expanded={isOpen}
               aria-controls={`accordion-collapse-body-${accordianId}`}
             >
-              <span className="text-lg text-black w-100 font-caslon font-normal tracking-wide mt-10">
+              <span className="text-lg text-black w-100 font-caslon font-normal tracking-wide mt-10 text-start">
                 {accordianHeader}
               </span>
             </button>
