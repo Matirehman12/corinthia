@@ -105,7 +105,7 @@ export default function Home() {
       <div className="grid grid-cols-1 px-3">
         <CustomCarousel />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-40 mx-5 md:mx-20">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 md:mt-40 mx-5 md:mx-20">
         <div className="image-container">
           <Image
             src={surgicalAsthetic3}
