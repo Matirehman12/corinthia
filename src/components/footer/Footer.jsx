@@ -57,7 +57,7 @@ const Footer = () => {
 
                         </div>
                         {/* </div> */}
-                        <div className='md:flex items-center xl:gap-10 py-5 md:mt-16'>
+                        <div className='flex flex-col md:flex-row items-center xl:gap-10 py-5 md:mt-16'>
                             <Image
                                 src={Logo}
                                 alt="brand logo"
@@ -68,7 +68,7 @@ const Footer = () => {
                             <p className='font-normal font-caslon text-base text-gray'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                         </div>
 
-                        <div className="flex md:items-center md:justify-between gap-5 flex-col-reverse md:flex-row mt-32 ">
+                        <div className="flex items-center justify-center md:justify-between gap-5 flex-col-reverse md:flex-row mt-10 md:mt-32 ">
                             <span className="text-sm text-gray sm:text-center dark:text-gray-400 font-caslon">© 2024   <a href="https://flowbite.com/" className="hover:underline text-yellowGradient">Corinthia Clinic</a>. All Rights Reserved.
                             </span>
                             <div className='flex items-center gap-3'>
